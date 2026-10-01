@@ -8,7 +8,105 @@
 );
 
 
+
+
 GO
 CREATE UNIQUE NONCLUSTERED INDEX [IX_tblSpecGroupDocType]
     ON [dbo].[tblSpecGroupDocType]([IdODocType] ASC, [IdOGroupDocType] ASC);
+
+
+GO
+GRANT UPDATE
+    ON OBJECT::[dbo].[tblSpecGroupDocType] TO [RegistrarM]
+    AS [dbo];
+
+
+GO
+GRANT UPDATE
+    ON OBJECT::[dbo].[tblSpecGroupDocType] TO [RegistrarB]
+    AS [dbo];
+
+
+GO
+GRANT UPDATE
+    ON OBJECT::[dbo].[tblSpecGroupDocType] TO [Admin]
+    AS [dbo];
+
+
+GO
+GRANT SELECT
+    ON OBJECT::[dbo].[tblSpecGroupDocType] TO [Sampler]
+    AS [dbo];
+
+
+GO
+GRANT SELECT
+    ON OBJECT::[dbo].[tblSpecGroupDocType] TO [RegistrarM]
+    AS [dbo];
+
+
+GO
+GRANT SELECT
+    ON OBJECT::[dbo].[tblSpecGroupDocType] TO [RegistrarB]
+    AS [dbo];
+
+
+GO
+GRANT SELECT
+    ON OBJECT::[dbo].[tblSpecGroupDocType] TO [Admin]
+    AS [dbo];
+
+
+GO
+GRANT INSERT
+    ON OBJECT::[dbo].[tblSpecGroupDocType] TO [RegistrarM]
+    AS [dbo];
+
+
+GO
+GRANT INSERT
+    ON OBJECT::[dbo].[tblSpecGroupDocType] TO [RegistrarB]
+    AS [dbo];
+
+
+GO
+GRANT INSERT
+    ON OBJECT::[dbo].[tblSpecGroupDocType] TO [Admin]
+    AS [dbo];
+
+
+GO
+GRANT DELETE
+    ON OBJECT::[dbo].[tblSpecGroupDocType] TO [RegistrarM]
+    AS [dbo];
+
+
+GO
+GRANT DELETE
+    ON OBJECT::[dbo].[tblSpecGroupDocType] TO [RegistrarB]
+    AS [dbo];
+
+
+GO
+GRANT DELETE
+    ON OBJECT::[dbo].[tblSpecGroupDocType] TO [Admin]
+    AS [dbo];
+
+
+GO
+GRANT ALTER
+    ON OBJECT::[dbo].[tblSpecGroupDocType] TO [RegistrarM]
+    AS [dbo];
+
+
+GO
+GRANT ALTER
+    ON OBJECT::[dbo].[tblSpecGroupDocType] TO [RegistrarB]
+    AS [dbo];
+
+
+GO
+GRANT ALTER
+    ON OBJECT::[dbo].[tblSpecGroupDocType] TO [Admin]
+    AS [dbo];
 

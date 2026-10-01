@@ -16,3 +16,20 @@ BEGIN
 		LEFT OUTER JOIN tIndex i ON i.IdIndex = iss.IdOIndex
 	WHERE iss.IdODocOut = @IdDocOut
 	END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qIndexes] TO [Sampler]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qIndexes] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qIndexes] TO [Admin]
+    AS [dbo];
+

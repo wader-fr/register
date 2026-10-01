@@ -15,3 +15,8 @@ AS
 		SELECT -COUNT(*) dd
 		FROM dbo.tCldr c
 		WHERE c.DateD BETWEEN @DateE AND @DateB
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDateDiff] TO PUBLIC
+    AS [dbo];
+

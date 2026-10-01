@@ -18,3 +18,8 @@ BEGIN
 
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qEtapList] TO PUBLIC
+    AS [dbo];
+

@@ -16,3 +16,20 @@ BEGIN
 	WHERE te.AttestatTLC = @Attestat
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qTLCEmpC] TO [Sampler]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qTLCEmpC] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qTLCEmpC] TO [Admin]
+    AS [dbo];
+

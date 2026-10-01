@@ -22,3 +22,50 @@ BEGIN
 	RETURN isnull(@ResultVar, ' ')
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[fnDepts] TO [SenderFGIS]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[fnDepts] TO [RegistrarM]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[fnDepts] TO [RegistrarB]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[fnDepts] TO PUBLIC
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[fnDepts] TO [Maneger]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[fnDepts] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[fnDepts] TO [Boss]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[fnDepts] TO [Admin]
+    AS [dbo];
+

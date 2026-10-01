@@ -16,4 +16,14 @@ BEGIN
     FROM dbo.tProtocol AS p
     WHERE IdODocOut = @IdDocOut
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qProtRep] TO [SenderFGIS]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qProtRep] TO [Admin]
+    AS [dbo];
 

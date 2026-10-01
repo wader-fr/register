@@ -21,3 +21,8 @@ BEGIN
 	WHERE d.IdDept = @Id
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDeptS] TO [Admin]
+    AS [dbo];
+

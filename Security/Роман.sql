@@ -1,2 +1,0 @@
-﻿CREATE USER [Роман] WITHOUT LOGIN;
-

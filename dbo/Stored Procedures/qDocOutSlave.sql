@@ -26,3 +26,26 @@ BEGIN
 	WHERE do.IdODocIn = @DocIn
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocOutSlave] TO [RegistrarM]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocOutSlave] TO [RegistrarB]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocOutSlave] TO [Boss]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocOutSlave] TO [Admin]
+    AS [dbo];
+

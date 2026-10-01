@@ -82,3 +82,32 @@ from dbo.tblDocIn di
 			AND di.DateIn BETWEEN @DateInB AND @DateInE
 
 END
+GO
+GRANT ALTER
+    ON OBJECT::[dbo].[qDocApp] TO [Sampler]
+    AS [dbo];
+
+
+GO
+GRANT ALTER
+    ON OBJECT::[dbo].[qDocApp] TO [Maneger]
+    AS [dbo];
+
+
+GO
+GRANT ALTER
+    ON OBJECT::[dbo].[qDocApp] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT ALTER
+    ON OBJECT::[dbo].[qDocApp] TO [Boss]
+    AS [dbo];
+
+
+GO
+GRANT ALTER
+    ON OBJECT::[dbo].[qDocApp] TO [Admin]
+    AS [dbo];
+

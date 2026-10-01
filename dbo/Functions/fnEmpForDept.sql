@@ -15,7 +15,7 @@ RETURNS  varchar(max)
 AS
 BEGIN
 	DECLARE @pos int = 1, @maxpos int
-	DECLARE @SubStr varchar(5)
+	DECLARE @SubStr varchar(15)
 	DECLARE @t table (pos int, IdEmp int)
 	DECLARE @Result varchar(max) = NULL;
 	
@@ -47,3 +47,14 @@ BEGIN
 	RETURN @Result
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[fnEmpForDept] TO [Maneger]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[fnEmpForDept] TO [Admin]
+    AS [dbo];
+

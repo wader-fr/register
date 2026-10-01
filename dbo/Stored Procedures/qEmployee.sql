@@ -15,7 +15,7 @@ BEGIN
 			,e.FirstName
 			,e.Patronimic
 			,e.IdODept
-			,e.IdOPost
+			,e.Post
 			,e.lgn
 			,e.Fired
 			,e.Roles
@@ -24,3 +24,8 @@ BEGIN
 	ORDER BY e.LastName
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qEmployee] TO [Admin]
+    AS [dbo];
+

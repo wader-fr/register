@@ -16,3 +16,8 @@ BEGIN
 	WHERE IdDept = @IdDept
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[uDeptCheck] TO [Admin]
+    AS [dbo];
+

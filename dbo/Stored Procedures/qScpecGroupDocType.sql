@@ -15,3 +15,20 @@ BEGIN
 	WHERE sgdt.IdOGroupDocType = @Id
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qScpecGroupDocType] TO [RegistrarM]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qScpecGroupDocType] TO [RegistrarB]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qScpecGroupDocType] TO [Admin]
+    AS [dbo];
+

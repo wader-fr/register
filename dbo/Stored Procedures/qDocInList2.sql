@@ -108,3 +108,26 @@ BEGIN
 			AND ISNULL(wt.IdOBudget, 0) = COALESCE(@IdBudget, wt.IdOBudget, 0)
 		ORDER BY di.NumIn
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocInList2] TO [RegistrarM]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocInList2] TO [RegistrarB]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocInList2] TO [Boss]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocInList2] TO [Admin]
+    AS [dbo];
+

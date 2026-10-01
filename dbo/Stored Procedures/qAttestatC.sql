@@ -14,3 +14,26 @@ BEGIN
 	FROM dbo.tAttestatTLC a
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qAttestatC] TO [SenderFGIS]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qAttestatC] TO [Sampler]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qAttestatC] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qAttestatC] TO [Admin]
+    AS [dbo];
+

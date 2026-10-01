@@ -9,3 +9,8 @@ set nocount on
 declare @Path nvarchar(4000) = [dbo].[fnGetOption]('PathScan')
 
 select @Path + N'\' +di.YearDoc + N'\' +convert(nvarchar(10), di.NumIn) + N'-' + di.Suffics pathScan from [dbo].[tblDocIn] di where di.IdDocIn = @IdDocIn
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qGetPathDocIn] TO PUBLIC
+    AS [dbo];
+

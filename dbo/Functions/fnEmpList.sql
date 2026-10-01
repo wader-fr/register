@@ -36,3 +36,8 @@ BEGIN
 	RETURN @Result
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[fnEmpList] TO PUBLIC
+    AS [dbo];
+

@@ -26,3 +26,26 @@ BEGIN
 	WHERE sdi.IdODocIn = @IdDoc
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qScanInExp] TO [Sampler]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qScanInExp] TO [Maneger]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qScanInExp] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qScanInExp] TO [Admin]
+    AS [dbo];
+

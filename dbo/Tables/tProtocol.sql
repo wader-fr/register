@@ -9,3 +9,87 @@
     CONSTRAINT [FK_tProtocol_tDocOut1] FOREIGN KEY ([IdODocOut]) REFERENCES [dbo].[tDocOut] ([IdDocOut])
 );
 
+
+GO
+GRANT UPDATE
+    ON OBJECT::[dbo].[tProtocol] TO [Sampler]
+    AS [dbo];
+
+
+GO
+GRANT UPDATE
+    ON OBJECT::[dbo].[tProtocol] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT UPDATE
+    ON OBJECT::[dbo].[tProtocol] TO [Admin]
+    AS [dbo];
+
+
+GO
+GRANT SELECT
+    ON OBJECT::[dbo].[tProtocol] TO [SenderFGIS]
+    AS [dbo];
+
+
+GO
+GRANT SELECT
+    ON OBJECT::[dbo].[tProtocol] TO [Sampler]
+    AS [dbo];
+
+
+GO
+GRANT SELECT
+    ON OBJECT::[dbo].[tProtocol] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT SELECT
+    ON OBJECT::[dbo].[tProtocol] TO [Admin]
+    AS [dbo];
+
+
+GO
+GRANT REFERENCES
+    ON OBJECT::[dbo].[tProtocol] TO [Admin]
+    AS [dbo];
+
+
+GO
+GRANT INSERT
+    ON OBJECT::[dbo].[tProtocol] TO [Sampler]
+    AS [dbo];
+
+
+GO
+GRANT INSERT
+    ON OBJECT::[dbo].[tProtocol] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT INSERT
+    ON OBJECT::[dbo].[tProtocol] TO [Admin]
+    AS [dbo];
+
+
+GO
+GRANT DELETE
+    ON OBJECT::[dbo].[tProtocol] TO [Sampler]
+    AS [dbo];
+
+
+GO
+GRANT DELETE
+    ON OBJECT::[dbo].[tProtocol] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT DELETE
+    ON OBJECT::[dbo].[tProtocol] TO [Admin]
+    AS [dbo];
+

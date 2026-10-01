@@ -49,3 +49,26 @@ BEGIN
 			WHERE IdODoc = @IdDoc AND IdOTypeApp = @IdEtap
 		END
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[u4Etap] TO [Sampler]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[u4Etap] TO [Maneger]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[u4Etap] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[u4Etap] TO [Admin]
+    AS [dbo];
+

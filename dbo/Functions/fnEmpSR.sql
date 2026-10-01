@@ -24,3 +24,8 @@ BEGIN
 	RETURN @Result
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[fnEmpSR] TO PUBLIC
+    AS [dbo];
+

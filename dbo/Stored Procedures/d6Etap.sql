@@ -23,3 +23,20 @@ BEGIN
 	where IdDocIn = @IdDoc
 	
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[d6Etap] TO [Maneger]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[d6Etap] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[d6Etap] TO [Admin]
+    AS [dbo];
+

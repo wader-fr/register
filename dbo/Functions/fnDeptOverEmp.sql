@@ -34,3 +34,8 @@ BEGIN
 	RETURN ISNULL(@Result, '%')
 --	Print @Result 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[fnDeptOverEmp] TO PUBLIC
+    AS [dbo];
+

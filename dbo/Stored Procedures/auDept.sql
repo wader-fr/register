@@ -49,3 +49,8 @@ BEGIN
 		END
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[auDept] TO [Admin]
+    AS [dbo];
+

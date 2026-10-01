@@ -20,3 +20,8 @@ BEGIN
 	ORDER BY 2
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qEmpC] TO PUBLIC
+    AS [dbo];
+

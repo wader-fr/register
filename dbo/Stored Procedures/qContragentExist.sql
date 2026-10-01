@@ -19,3 +19,20 @@ BEGIN
 			OR c.sName LIKE @Name;
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qContragentExist] TO [RegistrarM]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qContragentExist] TO [RegistrarB]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qContragentExist] TO [Admin]
+    AS [dbo];
+

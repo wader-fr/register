@@ -20,3 +20,32 @@ BEGIN
 	WHERE e.TypeDoc LIKE @IdDocS
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qExpTypeC] TO [Sampler]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qExpTypeC] TO [RegistrarM]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qExpTypeC] TO [RegistrarB]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qExpTypeC] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qExpTypeC] TO [Admin]
+    AS [dbo];
+

@@ -39,3 +39,8 @@ BEGIN
 		END
 	RETURN @Result
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[fnInitial] TO PUBLIC
+    AS [dbo];
+

@@ -147,3 +147,39 @@ End
 GO
 EXECUTE sp_addextendedproperty @name = N'MS_DiagramPaneCount', @value = 1, @level0type = N'SCHEMA', @level0name = N'dbo', @level1type = N'VIEW', @level1name = N'vDocOut';
 
+
+GO
+GRANT UPDATE
+    ON OBJECT::[dbo].[vDocOut] TO [Sampler]
+    AS [dbo];
+
+
+GO
+GRANT UPDATE
+    ON OBJECT::[dbo].[vDocOut] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT UPDATE
+    ON OBJECT::[dbo].[vDocOut] TO [Admin]
+    AS [dbo];
+
+
+GO
+GRANT SELECT
+    ON OBJECT::[dbo].[vDocOut] TO [Sampler]
+    AS [dbo];
+
+
+GO
+GRANT SELECT
+    ON OBJECT::[dbo].[vDocOut] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT SELECT
+    ON OBJECT::[dbo].[vDocOut] TO [Admin]
+    AS [dbo];
+

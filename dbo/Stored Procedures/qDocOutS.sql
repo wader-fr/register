@@ -1,7 +1,7 @@
 ﻿
 CREATE PROCEDURE [dbo].[qDocOutS]
 --	DECLARE
-		@IdDocOut BIGINT = 102020
+		@IdDocOut BIGINT = 97328
 AS
 BEGIN
 	DECLARE @ResNum nvarchar(20), 
@@ -10,20 +10,17 @@ BEGIN
 		@ScanName nvarchar(150),
 		@NameFile nvarchar(150)
 
-	select @ScanPath = dbo.fnGetPathDocIn(di.IdDocIn), @ScanName = dto.sDocTypeOut + ' ' + do.NumDocOut + '.pdf', @NameFile = dto.sDocTypeOut + ' ' + do.NumDocOut
-			, @ResNum = dor.NumDocOut, @ResDate = dor.DateDocOut
+	select @ScanPath = dbo.fnGetPathDocIn(di.IdDocIn), @ScanName = dto.sDocTypeOut + ' ' + do.NumDocOut + '.pdf', @NameFile = dto.sDocTypeOut + ' ' + do.NumDocOut 
 	from [dbo].[tDocOut] do
 		inner join [dbo].[tblDocIn] di on di.IdDocIn = do.IdODocIn
 		left outer join [dbo].[tblDocTypeOut] dto on dto.IdDocTypeOut= do.IdOTypeDocOut
-		left outer join [dbo].[tDocOut] dor on dor.IdDocOut = do.IdODocOut
 	where do.IdDocOut = @IdDocOut
+
 
 	SELECT do.NumDocOut
 		, do.DateDocOut
-		, isnull(@ResNum, do.ResigningNum) ResigningNum
-		, isnull(@ResDate, do.ResigningDate) ResigningDate
-		--, do.ResigningNum
-		--, do.ResigningDate
+		, do.ResigningNum
+		, do.ResigningDate
 		, do.DateInspB
 		, do.DateInspE
 		, do.IdOTypeDocOut
@@ -56,3 +53,20 @@ BEGIN
 
 	WHERE do.IdDocOut = @IdDocOut
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocOutS] TO [Sampler]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocOutS] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocOutS] TO [Admin]
+    AS [dbo];
+

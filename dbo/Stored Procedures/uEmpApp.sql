@@ -40,3 +40,26 @@ BEGIN
 		AND  e.Roles LIKE '%Maneger%'
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[uEmpApp] TO [RegistrarM]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[uEmpApp] TO [RegistrarB]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[uEmpApp] TO [Maneger]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[uEmpApp] TO [Admin]
+    AS [dbo];
+

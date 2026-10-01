@@ -22,3 +22,32 @@ BEGIN
 	WHERE o.[Exp] LIKE  @IdExpS
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qTypeObjC] TO [Sampler]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qTypeObjC] TO [RegistrarM]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qTypeObjC] TO [RegistrarB]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qTypeObjC] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qTypeObjC] TO [Admin]
+    AS [dbo];
+

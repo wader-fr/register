@@ -13,3 +13,20 @@ BEGIN
 	ORDER BY gdt.GroupDocType
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qGroupDocType] TO [RegistrarM]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qGroupDocType] TO [RegistrarB]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qGroupDocType] TO [Admin]
+    AS [dbo];
+

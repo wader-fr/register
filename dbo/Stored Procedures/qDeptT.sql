@@ -22,3 +22,8 @@ BEGIN
 
 	SELECT * FROM cte
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDeptT] TO [Admin]
+    AS [dbo];
+

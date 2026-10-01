@@ -16,3 +16,26 @@ BEGIN
 	WHERE p.IdODocOut = @IdDocOut
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qProtS] TO [SenderFGIS]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qProtS] TO [Sampler]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qProtS] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qProtS] TO [Admin]
+    AS [dbo];
+

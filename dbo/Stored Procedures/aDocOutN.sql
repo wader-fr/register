@@ -70,3 +70,8 @@ BEGIN
 
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[aDocOutN] TO PUBLIC
+    AS [dbo];
+

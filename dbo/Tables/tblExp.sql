@@ -6,6 +6,8 @@
 );
 
 
+
+
 GO
 EXECUTE sp_addextendedproperty @name = N'MS_AggregateType', @value = -1, @level0type = N'SCHEMA', @level0name = N'dbo', @level1type = N'TABLE', @level1name = N'tblExp', @level2type = N'COLUMN', @level2name = N'IdExpType';
 
@@ -88,4 +90,58 @@ EXECUTE sp_addextendedproperty @name = N'MS_IMEMode', @value = N'0', @level0type
 
 GO
 EXECUTE sp_addextendedproperty @name = N'MS_TextAlign', @value = 0, @level0type = N'SCHEMA', @level0name = N'dbo', @level1type = N'TABLE', @level1name = N'tblExp', @level2type = N'COLUMN', @level2name = N'TypeDoc';
+
+
+GO
+GRANT UPDATE
+    ON OBJECT::[dbo].[tblExp] TO [Admin]
+    AS [dbo];
+
+
+GO
+GRANT SELECT
+    ON OBJECT::[dbo].[tblExp] TO [Sampler]
+    AS [dbo];
+
+
+GO
+GRANT SELECT
+    ON OBJECT::[dbo].[tblExp] TO [RegistrarM]
+    AS [dbo];
+
+
+GO
+GRANT SELECT
+    ON OBJECT::[dbo].[tblExp] TO [RegistrarB]
+    AS [dbo];
+
+
+GO
+GRANT SELECT
+    ON OBJECT::[dbo].[tblExp] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT SELECT
+    ON OBJECT::[dbo].[tblExp] TO [Admin]
+    AS [dbo];
+
+
+GO
+GRANT INSERT
+    ON OBJECT::[dbo].[tblExp] TO [Admin]
+    AS [dbo];
+
+
+GO
+GRANT DELETE
+    ON OBJECT::[dbo].[tblExp] TO [Admin]
+    AS [dbo];
+
+
+GO
+GRANT ALTER
+    ON OBJECT::[dbo].[tblExp] TO [Admin]
+    AS [dbo];
 

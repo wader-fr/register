@@ -54,7 +54,7 @@ BEGIN
 				SET IdsDept = @IdsDept, IdOEmp = @IdEmp, IdODept = @IdDept, Depts = @Depts, DateExec = GETDATE()
 				WHERE IdODoc = @IdDoc AND IdOTypeApp = @IdEtap
 
-			WHILE @IdEtap <= @MaxEtap
+			WHILE @IdEtap < @MaxEtap
 				BEGIN
 					SET @IdEtap = @IdEtap + 1
 					SELECT @IdsDeptO = a.IdsDept, @IdsEmpO = a.IdsEmp FROM dbo.tAppointment a WHERE a.IdODoc = @IdDoc AND a.IdOTypeApp = @IdEtap
@@ -74,3 +74,26 @@ BEGIN
 
 		END
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[u1Etap] TO [Sampler]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[u1Etap] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[u1Etap] TO [Boss]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[u1Etap] TO [Admin]
+    AS [dbo];
+

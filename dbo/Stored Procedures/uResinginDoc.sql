@@ -17,3 +17,14 @@ BEGIN
 	WHERE IdDocOut= @IdDocOut
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[uResinginDoc] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[uResinginDoc] TO [Admin]
+    AS [dbo];
+

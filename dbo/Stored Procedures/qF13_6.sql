@@ -37,4 +37,26 @@ AS
 		) AS [из них о несоответствии]
 	FROM dbo.tblTypeObj AS tob
 	WHERE tob.IdTypeObj IN (61,62,63,64)
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qF13_6] TO [RegistrarM]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qF13_6] TO [RegistrarB]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qF13_6] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qF13_6] TO [Admin]
+    AS [dbo];
 

@@ -17,3 +17,14 @@ BEGIN
 	ORDER BY i.NameIndex
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qIndexTV] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qIndexTV] TO [Admin]
+    AS [dbo];
+

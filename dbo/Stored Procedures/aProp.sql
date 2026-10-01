@@ -32,3 +32,20 @@ BEGIN
 	SET @IdProperty = @@IDENTITY
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[aProp] TO [RegistrarM]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[aProp] TO [RegistrarB]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[aProp] TO [Admin]
+    AS [dbo];
+

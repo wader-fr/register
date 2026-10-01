@@ -18,3 +18,8 @@ BEGIN
 	RETURN  @Result
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[fnCountDTGroup] TO PUBLIC
+    AS [dbo];
+

@@ -25,3 +25,8 @@ BEGIN
 	RETURN @Result
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[fnDeptSR] TO PUBLIC
+    AS [dbo];
+

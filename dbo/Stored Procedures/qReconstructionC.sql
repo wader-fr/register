@@ -19,3 +19,32 @@ BEGIN
 	WHERE r.[Exp] LIKE @IdExpS
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qReconstructionC] TO [Sampler]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qReconstructionC] TO [RegistrarM]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qReconstructionC] TO [RegistrarB]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qReconstructionC] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qReconstructionC] TO [Admin]
+    AS [dbo];
+

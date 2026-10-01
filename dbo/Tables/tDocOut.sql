@@ -43,6 +43,8 @@
 );
 
 
+
+
 GO
 -- =============================================
 -- Author:		<Author,,Name>
@@ -576,4 +578,100 @@ EXECUTE sp_addextendedproperty @name = N'MS_CurrencyLCID', @value = 0, @level0ty
 
 GO
 EXECUTE sp_addextendedproperty @name = N'MS_TextAlign', @value = 0, @level0type = N'SCHEMA', @level0name = N'dbo', @level1type = N'TABLE', @level1name = N'tDocOut', @level2type = N'COLUMN', @level2name = N'IdOResult';
+
+
+GO
+GRANT UPDATE
+    ON OBJECT::[dbo].[tDocOut] TO [SenderFGIS]
+    AS [dbo];
+
+
+GO
+GRANT UPDATE
+    ON OBJECT::[dbo].[tDocOut] TO [Sampler]
+    AS [dbo];
+
+
+GO
+GRANT UPDATE
+    ON OBJECT::[dbo].[tDocOut] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT UPDATE
+    ON OBJECT::[dbo].[tDocOut] TO [Admin]
+    AS [dbo];
+
+
+GO
+GRANT SELECT
+    ON OBJECT::[dbo].[tDocOut] TO [SenderFGIS]
+    AS [dbo];
+
+
+GO
+GRANT SELECT
+    ON OBJECT::[dbo].[tDocOut] TO [Sampler]
+    AS [dbo];
+
+
+GO
+GRANT SELECT
+    ON OBJECT::[dbo].[tDocOut] TO [RegistrarM]
+    AS [dbo];
+
+
+GO
+GRANT SELECT
+    ON OBJECT::[dbo].[tDocOut] TO [RegistrarB]
+    AS [dbo];
+
+
+GO
+GRANT SELECT
+    ON OBJECT::[dbo].[tDocOut] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT SELECT
+    ON OBJECT::[dbo].[tDocOut] TO [Admin]
+    AS [dbo];
+
+
+GO
+GRANT INSERT
+    ON OBJECT::[dbo].[tDocOut] TO [Sampler]
+    AS [dbo];
+
+
+GO
+GRANT INSERT
+    ON OBJECT::[dbo].[tDocOut] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT INSERT
+    ON OBJECT::[dbo].[tDocOut] TO [Admin]
+    AS [dbo];
+
+
+GO
+GRANT DELETE
+    ON OBJECT::[dbo].[tDocOut] TO [Sampler]
+    AS [dbo];
+
+
+GO
+GRANT DELETE
+    ON OBJECT::[dbo].[tDocOut] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT DELETE
+    ON OBJECT::[dbo].[tDocOut] TO [Admin]
+    AS [dbo];
 

@@ -33,3 +33,8 @@ BEGIN
 		END
 	RETURN @Result
 	END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[fnEmpForDepts] TO PUBLIC
+    AS [dbo];
+

@@ -25,3 +25,8 @@ BEGIN
 	SET @IdDept = @@IDENTITY
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[aDept] TO [Admin]
+    AS [dbo];
+

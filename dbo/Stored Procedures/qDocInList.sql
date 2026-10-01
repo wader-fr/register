@@ -97,3 +97,26 @@ BEGIN
 	
 	ORDER BY di.NumIn, di.YearDoc
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocInList] TO [RegistrarM]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocInList] TO [RegistrarB]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocInList] TO [Boss]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocInList] TO [Admin]
+    AS [dbo];
+

@@ -14,3 +14,20 @@ BEGIN
 	ORDER BY p.Property
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qPropC] TO [RegistrarM]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qPropC] TO [RegistrarB]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qPropC] TO [Admin]
+    AS [dbo];
+

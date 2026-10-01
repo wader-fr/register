@@ -13,3 +13,8 @@ BEGIN
 	SELECT c.IdContragent, c.fName
 	FROM dbo.tblContragent c
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qContragentC] TO PUBLIC
+    AS [dbo];
+

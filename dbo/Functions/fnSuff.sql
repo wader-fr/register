@@ -18,3 +18,8 @@ BEGIN
 	RETURN @ResultVar
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[fnSuff] TO PUBLIC
+    AS [dbo];
+

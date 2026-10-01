@@ -22,3 +22,8 @@ BEGIN
 	RETURN isnull(@ResultVar, ' ')
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[fnEmps] TO PUBLIC
+    AS [dbo];
+

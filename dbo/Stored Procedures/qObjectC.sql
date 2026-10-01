@@ -24,3 +24,32 @@ BEGIN
 	SELECT * FROM @tbl
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qObjectC] TO [Sampler]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qObjectC] TO [RegistrarM]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qObjectC] TO [RegistrarB]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qObjectC] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qObjectC] TO [Admin]
+    AS [dbo];
+

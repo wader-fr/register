@@ -84,3 +84,32 @@ begin
 	order by di.YearDoc, di.DateIn
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocInExpert] TO [Sampler]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocInExpert] TO [Maneger]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocInExpert] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocInExpert] TO [Boss]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocInExpert] TO [Admin]
+    AS [dbo];
+

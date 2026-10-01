@@ -46,3 +46,20 @@ BEGIN
 
 	SELECT * FROM @tbl;
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qContFind] TO [RegistrarM]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qContFind] TO [RegistrarB]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qContFind] TO [Admin]
+    AS [dbo];
+

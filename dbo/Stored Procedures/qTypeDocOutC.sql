@@ -15,3 +15,32 @@ BEGIN
 	ORDER BY dto.AutoNumGroup desc
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qTypeDocOutC] TO [Sampler]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qTypeDocOutC] TO [RegistrarM]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qTypeDocOutC] TO [RegistrarB]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qTypeDocOutC] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qTypeDocOutC] TO [Admin]
+    AS [dbo];
+

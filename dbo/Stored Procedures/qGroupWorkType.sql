@@ -14,3 +14,20 @@ BEGIN
 	ORDER BY gwt.GroupWorkType
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qGroupWorkType] TO [RegistrarM]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qGroupWorkType] TO [RegistrarB]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qGroupWorkType] TO [Admin]
+    AS [dbo];
+

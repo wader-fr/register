@@ -20,3 +20,32 @@ BEGIN
 		END
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[aAppointment] TO [RegistrarM]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[aAppointment] TO [RegistrarB]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[aAppointment] TO [Maneger]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[aAppointment] TO [Boss]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[aAppointment] TO [Admin]
+    AS [dbo];
+

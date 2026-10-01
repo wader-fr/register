@@ -14,3 +14,8 @@ BEGIN
 		WHERE IdEmployee = @IdEmp
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[dEmp] TO [Admin]
+    AS [dbo];
+

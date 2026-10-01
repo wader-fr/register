@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[tND] (
+    [IdND]   INT            NOT NULL,
+    [NameND] NVARCHAR (500) NULL,
+    CONSTRAINT [PK_tND] PRIMARY KEY CLUSTERED ([IdND] ASC)
+);
+

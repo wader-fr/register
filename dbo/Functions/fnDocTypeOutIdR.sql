@@ -22,3 +22,8 @@ BEGIN
 	RETURN @Result
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[fnDocTypeOutIdR] TO PUBLIC
+    AS [dbo];
+

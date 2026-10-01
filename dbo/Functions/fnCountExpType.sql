@@ -18,3 +18,8 @@ BEGIN
 	RETURN @Result
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[fnCountExpType] TO PUBLIC
+    AS [dbo];
+

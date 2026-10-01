@@ -30,4 +30,14 @@ AS
 		AND do.OutAA = 0
 		AND do.ANumDocOut IS NOT NULL
 	ORDER BY CASE WHEN do.ScanName IS NULL THEN 1 ELSE 0 END , do.DateDocOut, do.ANumDocOut
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qReportFgis] TO [SenderFGIS]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qReportFgis] TO [Admin]
+    AS [dbo];
 

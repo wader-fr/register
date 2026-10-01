@@ -212,6 +212,21 @@ AS
 
   SELECT
     *
-  FROM @Tabl; 
+  FROM @Tabl;
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qRepExec] TO [RegistrarM]
+    AS [dbo];
 
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qRepExec] TO [RegistrarB]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qRepExec] TO [Admin]
+    AS [dbo];
 

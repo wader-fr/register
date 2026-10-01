@@ -16,3 +16,38 @@ BEGIN
 	WHERE o.IdODocIn = @IdDocIn
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qObjectList] TO [Sampler]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qObjectList] TO [RegistrarM]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qObjectList] TO [RegistrarB]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qObjectList] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qObjectList] TO [Boss]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qObjectList] TO [Admin]
+    AS [dbo];
+

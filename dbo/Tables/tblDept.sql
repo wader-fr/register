@@ -11,6 +11,8 @@
 );
 
 
+
+
 GO
 EXECUTE sp_addextendedproperty @name = N'MS_AggregateType', @value = -1, @level0type = N'SCHEMA', @level0name = N'dbo', @level1type = N'TABLE', @level1name = N'tblDept', @level2type = N'COLUMN', @level2name = N'IdDept';
 
@@ -145,4 +147,70 @@ EXECUTE sp_addextendedproperty @name = N'MS_TextAlign', @value = 0, @level0type 
 
 GO
 EXECUTE sp_addextendedproperty @name = N'MS_DisplayControl', @value = N'106', @level0type = N'SCHEMA', @level0name = N'dbo', @level1type = N'TABLE', @level1name = N'tblDept', @level2type = N'COLUMN', @level2name = N'Act';
+
+
+GO
+CREATE NONCLUSTERED INDEX [IX_tblDept_IdDept]
+    ON [dbo].[tblDept]([IdDept] ASC)
+    INCLUDE([IdOFilial], [Act], [sNameDept]);
+
+
+GO
+CREATE NONCLUSTERED INDEX [IX_tblDept_Act_IdOFilial_IdDept]
+    ON [dbo].[tblDept]([Act] ASC, [IdOFilial] ASC, [IdDept] ASC)
+    INCLUDE([sNameDept]);
+
+
+GO
+GRANT UPDATE
+    ON OBJECT::[dbo].[tblDept] TO [Admin]
+    AS [dbo];
+
+
+GO
+GRANT SELECT
+    ON OBJECT::[dbo].[tblDept] TO [Sampler]
+    AS [dbo];
+
+
+GO
+GRANT SELECT
+    ON OBJECT::[dbo].[tblDept] TO [RegistrarM]
+    AS [dbo];
+
+
+GO
+GRANT SELECT
+    ON OBJECT::[dbo].[tblDept] TO [RegistrarB]
+    AS [dbo];
+
+
+GO
+GRANT SELECT
+    ON OBJECT::[dbo].[tblDept] TO PUBLIC
+    AS [dbo];
+
+
+GO
+GRANT SELECT
+    ON OBJECT::[dbo].[tblDept] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT SELECT
+    ON OBJECT::[dbo].[tblDept] TO [Admin]
+    AS [dbo];
+
+
+GO
+GRANT INSERT
+    ON OBJECT::[dbo].[tblDept] TO [Admin]
+    AS [dbo];
+
+
+GO
+GRANT DELETE
+    ON OBJECT::[dbo].[tblDept] TO [Admin]
+    AS [dbo];
 

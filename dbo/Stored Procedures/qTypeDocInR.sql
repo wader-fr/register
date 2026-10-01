@@ -23,3 +23,26 @@ BEGIN
 	SELECT * FROM @tbl
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qTypeDocInR] TO [RegistrarM]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qTypeDocInR] TO [RegistrarB]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qTypeDocInR] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qTypeDocInR] TO [Admin]
+    AS [dbo];
+

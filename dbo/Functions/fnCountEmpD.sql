@@ -20,3 +20,8 @@ BEGIN
 	RETURN @Result
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[fnCountEmpD] TO PUBLIC
+    AS [dbo];
+

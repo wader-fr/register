@@ -1,12 +1,13 @@
 ﻿
-CREATE PROCEDURE [dbo].[qGetRole] (@name_in_db SYSNAME)
+
+CREATE PROCEDURE [dbo].[qGetRole] 
 
 AS
 BEGIN
+declare @name_in_db SYSNAME = suser_name()
 
   SELECT
     usg.name
-   --,dbo.fnRoleDescrypt(usg.name) AS RDescrypt
   FROM sys.sysusers AS usu
   LEFT OUTER JOIN sys.sysmembers AS mem
   INNER JOIN sys.sysusers AS usg
@@ -25,5 +26,8 @@ BEGIN
   AND (usg.uid IS NULL)
 
 END
-  
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qGetRole] TO PUBLIC
+    AS [dbo];
 

@@ -18,3 +18,20 @@ BEGIN
 		INNER JOIN dbo.tblDocType dt ON di.IdOTypeDoc = dt.IdDocType
 WHERE di.IdDocIn = @IdDocIn
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qPlane] TO [Maneger]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qPlane] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qPlane] TO [Admin]
+    AS [dbo];
+

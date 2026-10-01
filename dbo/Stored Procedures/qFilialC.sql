@@ -15,3 +15,8 @@ BEGIN
 
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qFilialC] TO [Admin]
+    AS [dbo];
+

@@ -15,3 +15,8 @@ BEGIN
 	ORDER BY r.FName
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qRegion] TO PUBLIC
+    AS [dbo];
+

@@ -20,3 +20,8 @@ AS
 		ORDER BY ea.DateApp
 
 	END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qEmpApp] TO PUBLIC
+    AS [dbo];
+

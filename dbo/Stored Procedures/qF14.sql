@@ -69,4 +69,20 @@ AS
 
   FROM dbo.tblTypeObj AS tob
   WHERE tob.exp IS NOT NULL
-  
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qF14] TO [RegistrarM]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qF14] TO [RegistrarB]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qF14] TO [Admin]
+    AS [dbo];
+

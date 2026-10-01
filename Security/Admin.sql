@@ -2,20 +2,22 @@
     AUTHORIZATION [dbo];
 
 
-GO
-EXECUTE sp_addrolemember @rolename = N'Admin', @membername = N'ВласоваЭ';
 
 
 GO
-EXECUTE sp_addrolemember @rolename = N'Admin', @membername = N'Оплетина';
 
-
-GO
-EXECUTE sp_addrolemember @rolename = N'Admin', @membername = N'Кравченко';
 
 
 GO
-EXECUTE sp_addrolemember @rolename = N'Admin', @membername = N'Щелчкова';
+
+
+
+GO
+
+
+
+GO
+
 
 
 GO
@@ -23,7 +25,7 @@ EXECUTE sp_addrolemember @rolename = N'Admin', @membername = N'Фатеев';
 
 
 GO
-EXECUTE sp_addrolemember @rolename = N'Admin', @membername = N'Титова';
+
 
 
 GO

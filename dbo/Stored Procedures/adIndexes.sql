@@ -38,3 +38,14 @@ BEGIN
 	EXEC sys.sp_executesql @SQLString, @ParmDefinition, @IdDocOut = @IdDocOut;
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[adIndexes] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[adIndexes] TO [Admin]
+    AS [dbo];
+

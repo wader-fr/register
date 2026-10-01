@@ -24,3 +24,20 @@ BEGIN
 	WHERE c.IdContragent = @IdContragent
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qContragentS] TO [RegistrarM]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qContragentS] TO [RegistrarB]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qContragentS] TO [Admin]
+    AS [dbo];
+

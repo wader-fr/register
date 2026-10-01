@@ -27,3 +27,8 @@ BEGIN
 	SELECT * FROM @tbl
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qEmpDR] TO PUBLIC
+    AS [dbo];
+

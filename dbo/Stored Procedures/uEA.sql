@@ -87,3 +87,20 @@ BEGIN
 			WHERE @IdDepts LIKE '% ' + CONVERT(nvarchar(100), e.IdODept) + ' %';
 	END	
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[uEA] TO [Maneger]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[uEA] TO [Boss]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[uEA] TO [Admin]
+    AS [dbo];
+

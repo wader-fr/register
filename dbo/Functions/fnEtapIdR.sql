@@ -27,3 +27,8 @@ BEGIN
 	RETURN @Result
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[fnEtapIdR] TO PUBLIC
+    AS [dbo];
+

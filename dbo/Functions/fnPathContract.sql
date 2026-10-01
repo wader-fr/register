@@ -16,3 +16,8 @@ BEGIN
 	RETURN @Result
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[fnPathContract] TO PUBLIC
+    AS [dbo];
+

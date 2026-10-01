@@ -13,3 +13,8 @@ BEGIN
 	RETURN @Result
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[fnGetNumAttach] TO PUBLIC
+    AS [dbo];
+

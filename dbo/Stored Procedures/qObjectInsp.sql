@@ -9,3 +9,14 @@ AS
   FROM dbo.tObjectInsp oi
   WHERE oi.IdOTypeObject = ISNULL(@IdType, oi.IdOTypeObject)
         AND oi.ObjectInsp LIKE @ObjectIndp
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qObjectInsp] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qObjectInsp] TO [Admin]
+    AS [dbo];
+

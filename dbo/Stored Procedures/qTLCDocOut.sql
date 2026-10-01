@@ -17,3 +17,26 @@ BEGIN
 	WHERE t.IdODocOut = @IdDocOut AND t.IdOProtocol = @IdProt
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qTLCDocOut] TO [SenderFGIS]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qTLCDocOut] TO [Sampler]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qTLCDocOut] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qTLCDocOut] TO [Admin]
+    AS [dbo];
+

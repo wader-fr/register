@@ -20,3 +20,14 @@ BEGIN
 
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qResigningDoc] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qResigningDoc] TO [Admin]
+    AS [dbo];
+

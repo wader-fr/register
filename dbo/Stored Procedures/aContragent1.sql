@@ -34,4 +34,8 @@ BEGIN
 
 	SET @IdContragent = @@IDENTITY
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[aContragent1] TO [Admin]
+    AS [dbo];
 

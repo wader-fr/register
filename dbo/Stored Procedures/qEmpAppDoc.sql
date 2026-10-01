@@ -18,3 +18,26 @@ BEGIN
 	WHERE a.IdODoc = @IdDoc;
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qEmpAppDoc] TO [RegistrarM]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qEmpAppDoc] TO [RegistrarB]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qEmpAppDoc] TO [Boss]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qEmpAppDoc] TO [Admin]
+    AS [dbo];
+

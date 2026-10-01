@@ -5,6 +5,8 @@
 );
 
 
+
+
 GO
 EXECUTE sp_addextendedproperty @name = N'MS_AggregateType', @value = -1, @level0type = N'SCHEMA', @level0name = N'dbo', @level1type = N'TABLE', @level1name = N'tblTypeContr', @level2type = N'COLUMN', @level2name = N'IdTypeContr';
 
@@ -51,4 +53,34 @@ EXECUTE sp_addextendedproperty @name = N'MS_CurrencyLCID', @value = 0, @level0ty
 
 GO
 EXECUTE sp_addextendedproperty @name = N'MS_TextAlign', @value = 0, @level0type = N'SCHEMA', @level0name = N'dbo', @level1type = N'TABLE', @level1name = N'tblTypeContr', @level2type = N'COLUMN', @level2name = N'TypeContr';
+
+
+GO
+GRANT SELECT
+    ON OBJECT::[dbo].[tblTypeContr] TO [Sampler]
+    AS [dbo];
+
+
+GO
+GRANT SELECT
+    ON OBJECT::[dbo].[tblTypeContr] TO [RegistrarM]
+    AS [dbo];
+
+
+GO
+GRANT SELECT
+    ON OBJECT::[dbo].[tblTypeContr] TO [RegistrarB]
+    AS [dbo];
+
+
+GO
+GRANT SELECT
+    ON OBJECT::[dbo].[tblTypeContr] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT SELECT
+    ON OBJECT::[dbo].[tblTypeContr] TO [Admin]
+    AS [dbo];
 

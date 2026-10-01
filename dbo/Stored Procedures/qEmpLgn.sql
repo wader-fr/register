@@ -4,11 +4,13 @@
 -- Description:	<Description,,>
 -- =============================================
 CREATE PROCEDURE [dbo].[qEmpLgn]
-	@Lgn varchar(20)
 AS
 BEGIN
 
 	SET NOCOUNT ON;
+
+	declare @Lgn varchar(20) = suser_name()
+
 
 	SELECT e.IdEmployee, d.IdOFilial, e.IdODept, f.SFilial, d.sNameDept, ddd.IdDept dept
 	FROM dbo.tblEmployee e
@@ -18,3 +20,8 @@ BEGIN
 	WHERE e.lgn = @Lgn and e.Fired = 0;
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qEmpLgn] TO PUBLIC
+    AS [dbo];
+

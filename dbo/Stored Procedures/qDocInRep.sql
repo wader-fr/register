@@ -100,3 +100,20 @@ BEGIN
   ORDER BY di.NumIn
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocInRep] TO [RegistrarM]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocInRep] TO [RegistrarB]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocInRep] TO [Admin]
+    AS [dbo];
+

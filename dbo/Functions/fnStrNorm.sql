@@ -45,3 +45,8 @@ BEGIN
 	RETURN @Result
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[fnStrNorm] TO PUBLIC
+    AS [dbo];
+

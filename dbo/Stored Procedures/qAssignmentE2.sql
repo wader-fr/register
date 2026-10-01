@@ -22,3 +22,26 @@ BEGIN
 	where a.IdODocIn = @IdDoc and a.IdODept = @idDept and a.IdOEmp is not null
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qAssignmentE2] TO [Sampler]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qAssignmentE2] TO [Maneger]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qAssignmentE2] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qAssignmentE2] TO [Admin]
+    AS [dbo];
+

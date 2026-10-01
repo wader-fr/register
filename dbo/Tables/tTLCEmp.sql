@@ -10,3 +10,75 @@
     CONSTRAINT [FK_tTLCEmp_tAttestatTLC] FOREIGN KEY ([AttestatTLC]) REFERENCES [dbo].[tAttestatTLC] ([AttestatTLC])
 );
 
+
+GO
+GRANT UPDATE
+    ON OBJECT::[dbo].[tTLCEmp] TO [Sampler]
+    AS [dbo];
+
+
+GO
+GRANT UPDATE
+    ON OBJECT::[dbo].[tTLCEmp] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT UPDATE
+    ON OBJECT::[dbo].[tTLCEmp] TO [Admin]
+    AS [dbo];
+
+
+GO
+GRANT SELECT
+    ON OBJECT::[dbo].[tTLCEmp] TO [SenderFGIS]
+    AS [dbo];
+
+
+GO
+GRANT SELECT
+    ON OBJECT::[dbo].[tTLCEmp] TO [Sampler]
+    AS [dbo];
+
+
+GO
+GRANT SELECT
+    ON OBJECT::[dbo].[tTLCEmp] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT SELECT
+    ON OBJECT::[dbo].[tTLCEmp] TO [Admin]
+    AS [dbo];
+
+
+GO
+GRANT INSERT
+    ON OBJECT::[dbo].[tTLCEmp] TO [Sampler]
+    AS [dbo];
+
+
+GO
+GRANT INSERT
+    ON OBJECT::[dbo].[tTLCEmp] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT INSERT
+    ON OBJECT::[dbo].[tTLCEmp] TO [Admin]
+    AS [dbo];
+
+
+GO
+GRANT DELETE
+    ON OBJECT::[dbo].[tTLCEmp] TO [Sampler]
+    AS [dbo];
+
+
+GO
+GRANT DELETE
+    ON OBJECT::[dbo].[tTLCEmp] TO [Admin]
+    AS [dbo];
+

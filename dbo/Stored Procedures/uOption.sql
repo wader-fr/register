@@ -20,3 +20,8 @@ BEGIN
 		VALUES (@Name, @opt)
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[uOption] TO [Admin]
+    AS [dbo];
+

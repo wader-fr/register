@@ -21,3 +21,20 @@ BEGIN
 	ORDER BY dto.AutoNum desc
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qTypeDocOutCC] TO [Sampler]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qTypeDocOutCC] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qTypeDocOutCC] TO [Admin]
+    AS [dbo];
+

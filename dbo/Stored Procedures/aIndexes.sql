@@ -19,3 +19,14 @@ BEGIN
 	SET @IdIndexes = @@identity
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[aIndexes] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[aIndexes] TO [Admin]
+    AS [dbo];
+

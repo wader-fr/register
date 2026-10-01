@@ -43,3 +43,32 @@ BEGIN
 	ORDER BY di.DateIn DESC
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocInFind] TO [Sampler]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocInFind] TO [RegistrarM]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocInFind] TO [RegistrarB]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocInFind] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocInFind] TO [Admin]
+    AS [dbo];
+

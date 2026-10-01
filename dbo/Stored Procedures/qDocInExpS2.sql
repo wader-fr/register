@@ -76,3 +76,32 @@ FROM dbo.tAppointment a
 	WHERE a.IdODoc = @IdDocIn
 			AND a.IdOTypeApp = @IdEtap
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocInExpS2] TO [Sampler]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocInExpS2] TO [Maneger]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocInExpS2] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocInExpS2] TO [Boss]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocInExpS2] TO [Admin]
+    AS [dbo];
+

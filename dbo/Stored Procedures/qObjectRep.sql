@@ -19,4 +19,20 @@ BEGIN
   WHERE (o.IdODocIn = @IdDocIn);
 
 END
-  
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qObjectRep] TO [RegistrarM]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qObjectRep] TO [RegistrarB]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qObjectRep] TO [Admin]
+    AS [dbo];
+

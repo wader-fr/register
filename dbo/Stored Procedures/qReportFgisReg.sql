@@ -92,3 +92,14 @@ AS
 		AND do.ANumDocOut IS NOT NULL
 		AND do.Sent = 0
 		AND dbo.fnDateDiff(do.DateDocOut, ISNULL(do.DateSent, GETDATE())) >= 10
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qReportFgisReg] TO [SenderFGIS]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qReportFgisReg] TO [Admin]
+    AS [dbo];
+

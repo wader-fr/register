@@ -15,3 +15,8 @@ begin
 	return @Ret
 
 end
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[fnGetPathDocIn] TO PUBLIC
+    AS [dbo];
+

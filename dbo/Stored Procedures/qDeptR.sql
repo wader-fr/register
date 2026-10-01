@@ -22,3 +22,8 @@ BEGIN
 	SELECT * FROM @tbl
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDeptR] TO PUBLIC
+    AS [dbo];
+

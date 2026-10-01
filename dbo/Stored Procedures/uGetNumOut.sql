@@ -30,3 +30,20 @@ begin
 		end
 	commit tran
 end
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[uGetNumOut] TO [Sampler]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[uGetNumOut] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[uGetNumOut] TO [Admin]
+    AS [dbo];
+

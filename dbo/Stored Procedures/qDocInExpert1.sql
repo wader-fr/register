@@ -81,3 +81,32 @@ begin
 			and di.DateIn between @DateInB and @DateInE
 	order by di.YearDoc, di.NumIn
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocInExpert1] TO [Sampler]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocInExpert1] TO [Maneger]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocInExpert1] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocInExpert1] TO [Boss]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocInExpert1] TO [Admin]
+    AS [dbo];
+

@@ -28,3 +28,26 @@ BEGIN
 
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocInExp_bak] TO [Maneger]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocInExp_bak] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocInExp_bak] TO [Boss]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocInExp_bak] TO [Admin]
+    AS [dbo];
+

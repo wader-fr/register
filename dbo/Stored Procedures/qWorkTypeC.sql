@@ -16,3 +16,8 @@ BEGIN
 	ORDER BY wt.IdOService
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qWorkTypeC] TO PUBLIC
+    AS [dbo];
+

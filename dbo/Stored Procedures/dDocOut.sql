@@ -46,3 +46,8 @@ BEGIN
 
 	set @Result =  @@rowcount
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[dDocOut] TO PUBLIC
+    AS [dbo];
+

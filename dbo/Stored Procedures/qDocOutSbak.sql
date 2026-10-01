@@ -81,3 +81,14 @@ BEGIN
   WHERE do.IdDocOut = @IdDocOut
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocOutSbak] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocOutSbak] TO [Admin]
+    AS [dbo];
+

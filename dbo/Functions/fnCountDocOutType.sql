@@ -20,3 +20,8 @@ BEGIN
 	RETURN @Result
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[fnCountDocOutType] TO PUBLIC
+    AS [dbo];
+

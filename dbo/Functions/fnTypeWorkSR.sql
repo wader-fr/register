@@ -23,3 +23,8 @@ BEGIN
 	RETURN @Result
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[fnTypeWorkSR] TO PUBLIC
+    AS [dbo];
+

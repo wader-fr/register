@@ -49,5 +49,8 @@ DECLARE CUR cursor FOR
 	RETURN @cons
 
 END
-  
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[fnEmpRole] TO PUBLIC
+    AS [dbo];
 

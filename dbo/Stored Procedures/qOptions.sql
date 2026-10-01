@@ -13,3 +13,8 @@ BEGIN
 	FROM dbo.tblOption o
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qOptions] TO [Admin]
+    AS [dbo];
+

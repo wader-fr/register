@@ -30,3 +30,32 @@ BEGIN
 	where a.IdODocIn = @IdDoc and a.IdODept = @idDept and a.IdOEmp = @idEmp
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qAssignmentE] TO [Sampler]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qAssignmentE] TO [Maneger]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qAssignmentE] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qAssignmentE] TO [Boss]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qAssignmentE] TO [Admin]
+    AS [dbo];
+

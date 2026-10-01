@@ -16,3 +16,20 @@ BEGIN
 	ORDER BY sgwt.IdOWorkType
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qSpecGroupWorkType] TO [RegistrarM]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qSpecGroupWorkType] TO [RegistrarB]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qSpecGroupWorkType] TO [Admin]
+    AS [dbo];
+

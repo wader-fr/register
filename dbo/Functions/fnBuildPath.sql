@@ -31,3 +31,8 @@ BEGIN
     RETURN replace(@Result, '/','_');
   --select replace(@Result, '/','_')
 END;
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[fnBuildPath] TO PUBLIC
+    AS [dbo];
+

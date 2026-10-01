@@ -17,3 +17,8 @@ BEGIN
 	SELECT * FROM @t
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qContractC] TO PUBLIC
+    AS [dbo];
+

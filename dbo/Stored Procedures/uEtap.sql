@@ -211,3 +211,8 @@ BEGIN
   END CATCH
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[uEtap] TO PUBLIC
+    AS [dbo];
+

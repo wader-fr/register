@@ -91,3 +91,14 @@ BEGIN
   WHERE do.IdDocOut = @IdDocOut
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[aqDocOutS] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[aqDocOutS] TO [Admin]
+    AS [dbo];
+

@@ -42,4 +42,26 @@ BEGIN
   EXEC (@SQL)
 */
 END
-  
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDeptSel] TO [RegistrarM]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDeptSel] TO [RegistrarB]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDeptSel] TO [Boss]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDeptSel] TO [Admin]
+    AS [dbo];
+

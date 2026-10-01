@@ -23,3 +23,8 @@ BEGIN
 
 		EXEC (@SQL)
 	END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDateAdd] TO PUBLIC
+    AS [dbo];
+

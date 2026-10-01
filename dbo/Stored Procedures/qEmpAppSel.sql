@@ -36,3 +36,20 @@ BEGIN
 		ORDER BY d.IdDept, e.IdEmployee
 		
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qEmpAppSel] TO [Maneger]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qEmpAppSel] TO [Boss]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qEmpAppSel] TO [Admin]
+    AS [dbo];
+

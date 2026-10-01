@@ -54,3 +54,26 @@ BEGIN
 				END
 			end
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[u5Etap] TO [Sampler]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[u5Etap] TO [Maneger]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[u5Etap] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[u5Etap] TO [Admin]
+    AS [dbo];
+

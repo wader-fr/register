@@ -23,3 +23,20 @@ BEGIN
 			AND di.DateIn >= DATEADD(YY, -2, GETDATE())
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocInExists] TO [RegistrarM]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocInExists] TO [RegistrarB]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocInExists] TO [Admin]
+    AS [dbo];
+

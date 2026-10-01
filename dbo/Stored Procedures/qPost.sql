@@ -14,3 +14,8 @@ BEGIN
 	ORDER BY p.Post
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qPost] TO [Admin]
+    AS [dbo];
+

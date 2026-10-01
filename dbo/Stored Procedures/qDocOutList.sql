@@ -79,3 +79,32 @@ BEGIN
 		AND do.DateDocOut BETWEEN ISNULL(@DateDocB, '1900-01-01') AND ISNULL(@DateDocE, '2200-01-01');
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocOutList] TO [Sampler]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocOutList] TO [RegistrarM]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocOutList] TO [RegistrarB]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocOutList] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qDocOutList] TO [Admin]
+    AS [dbo];
+

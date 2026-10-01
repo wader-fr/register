@@ -26,3 +26,8 @@ BEGIN
 			WHERE IdDept = @IdDept
 			COMMIT TRAN
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[dDept] TO [Admin]
+    AS [dbo];
+

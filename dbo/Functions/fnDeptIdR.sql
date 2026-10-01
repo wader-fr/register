@@ -1,27 +1,47 @@
-﻿CREATE FUNCTION [dbo].[fnDeptIdR] 
+﻿CREATE FUNCTION dbo.fnDeptIdR
 (
-	@Pos int
-	,@IdFilial int
+    @Pos int
 )
 RETURNS int
 AS
 BEGIN
+    DECLARE @Result int;
+    DECLARE @IdFil int;
 
-	DECLARE @Result int
-	DECLARE @tbl table (pos int, IdDept int)
+    DECLARE @tbl TABLE
+    (
+        pos int,
+        IdDept int
+    );
 
-	INSERT INTO @tbl
-	VALUES (0, 0)
+    SELECT @IdFil = d.IdOFilial
+    FROM dbo.tblEmployee e
+        INNER JOIN dbo.tblDept d
+            ON d.IdDept = e.IdODept
+    WHERE e.lgn = SYSTEM_USER;
 
-	INSERT INTO @tbl
-	SELECT ROW_NUMBER() OVER (ORDER BY IdDept) pos, d.IdDept
-	FROM dbo.tblDept d
-	WHERE d.Act = 1
-		AND d.IdOFilial = @IdFilial
-	ORDER BY d.IdDept
+    INSERT INTO @tbl
+    VALUES (0, 0);
 
-	SELECT @Result = IdDept FROM @tbl WHERE pos = @Pos
+    INSERT INTO @tbl
+    SELECT
+        ROW_NUMBER() OVER (ORDER BY d.IdDept),
+        d.IdDept
+    FROM dbo.tblDept d
+    WHERE d.Act = 1
+      AND (
+            @IdFil IS NULL
+            OR d.IdOFilial = @IdFil
+          );
 
-	RETURN @Result
+    SELECT @Result = IdDept
+    FROM @tbl
+    WHERE pos = @Pos;
 
+    RETURN @Result;
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[fnDeptIdR] TO PUBLIC
+    AS [dbo];
+

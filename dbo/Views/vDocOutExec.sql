@@ -130,3 +130,21 @@ End
 GO
 EXECUTE sp_addextendedproperty @name = N'MS_DiagramPaneCount', @value = 1, @level0type = N'SCHEMA', @level0name = N'dbo', @level1type = N'VIEW', @level1name = N'vDocOutExec';
 
+
+GO
+GRANT SELECT
+    ON OBJECT::[dbo].[vDocOutExec] TO [RegistrarM]
+    AS [dbo];
+
+
+GO
+GRANT SELECT
+    ON OBJECT::[dbo].[vDocOutExec] TO [RegistrarB]
+    AS [dbo];
+
+
+GO
+GRANT SELECT
+    ON OBJECT::[dbo].[vDocOutExec] TO [Admin]
+    AS [dbo];
+

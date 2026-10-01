@@ -25,3 +25,20 @@ BEGIN
 	SET @Return_value = @@IDENTITY
 	
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[aDocIn] TO [RegistrarM]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[aDocIn] TO [RegistrarB]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[aDocIn] TO [Admin]
+    AS [dbo];
+

@@ -17,3 +17,32 @@ BEGIN
 	where a.IdODocIn = @idDocIn
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qAssignmentD] TO [Sampler]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qAssignmentD] TO [Maneger]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qAssignmentD] TO [Expert]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qAssignmentD] TO [Boss]
+    AS [dbo];
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qAssignmentD] TO [Admin]
+    AS [dbo];
+

@@ -14,3 +14,8 @@ BEGIN
 	ORDER BY dt.Ordr
 
 END
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[qTypeDocInC] TO PUBLIC
+    AS [dbo];
+
