@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Бражкин]
+    WITH PASSWORD = N'of3wUPicam>tCng{yF|boji;msFT7_&#$!~<skuucojkuswj', SID = 0x653AC29903B00B41BC41A28A6611B8E6, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

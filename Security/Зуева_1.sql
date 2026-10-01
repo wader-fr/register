@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Зуева]
+    WITH PASSWORD = N'wwmm6sSY_bcdsodhcot{avrgmsFT7_&#$!~<sn|n{{bdvrea', SID = 0x16D114F24175B9438279E4F962714B8E, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

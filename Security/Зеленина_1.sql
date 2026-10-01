@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Зеленина]
+    WITH PASSWORD = N'o1fwic7hamtn{y%boQjn82kumsFT7_&#$!~<cojkugtwyLjg', SID = 0xF140AF78FBEE3440965146FF33B0AAD5, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

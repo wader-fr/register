@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Касаткина]
+    WITH PASSWORD = N'cofwicamtn{ylbojkuco`$?jmsFT7_&#$!~<Aku&wj903ggj', SID = 0xF7D489CB9675E94B84B76D886B8D1C78, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

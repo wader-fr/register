@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Леготкина]
+    WITH PASSWORD = N'DwEwmmsb@c#ds{okdhcIot3{msFT7_&#$!~<vrtsn|vn{y{b', SID = 0xB044BC64B18D2B499462A6FD93FDC19F, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

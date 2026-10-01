@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Харь]
+    WITH PASSWORD = N'eory+Wyahtoac$mqoae~ujqzmsFT7_&#$!~<^EeOq:yrrEs5', SID = 0x993D4DA8B2E06644AA9E173AFA081648, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

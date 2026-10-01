@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Галкина]
+    WITH PASSWORD = N'`ofw0iicaW?mtln{yl4bgTojmsFT7_&#$!~<kuw0jYcojkuw', SID = 0xCD4BF4D6B3F1784E90072CCFCE65CAD7, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

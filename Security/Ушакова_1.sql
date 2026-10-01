@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Ушакова]
+    WITH PASSWORD = N'eoryyahZto=aL#Ecqo<aeBuMmsFT7_&#$!~<jqzeq=yrrsbk', SID = 0xB23FC71024B04A47A3E1BDE848A1F8E1, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

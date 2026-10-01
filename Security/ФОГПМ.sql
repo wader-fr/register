@@ -1,0 +1,2 @@
+﻿CREATE USER [ФОГПМ] WITHOUT LOGIN;
+

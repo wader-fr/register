@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Мохнаткин]
+    WITH PASSWORD = N'o5fwic|aQm{atnw{yb7Ao@@MmsFT7_&#$!~<`Sjkucoj<kuw', SID = 0x8A9472273074254290D61DB351820333, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

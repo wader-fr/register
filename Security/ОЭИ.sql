@@ -1,0 +1,2 @@
+﻿CREATE USER [ОЭИ] WITHOUT LOGIN;
+

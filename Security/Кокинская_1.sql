@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Кокинская]
+    WITH PASSWORD = N'eory1h :yahtFo:lacqm7ooimsFT7_&#$!~<aeuj1mq$z3sL', SID = 0xF6A29731C3A5EF40BFCDC0D251943ED9, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

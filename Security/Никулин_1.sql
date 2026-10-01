@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Никулин]
+    WITH PASSWORD = N'Am37ofwicaK6mbpt9n{n^ybomsFT7_&#$!~<jkucoWjkul,i', SID = 0x8490373E5284A34BA098897CA921AA70, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

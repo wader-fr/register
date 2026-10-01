@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Комкова]
+    WITH PASSWORD = N'e~Sor@6yNy2auhtocac4Rjq;msFT7_&#$!~<oaeujyqPzeqy', SID = 0x958CF52756F67543B84D71F8A2CCE33E, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

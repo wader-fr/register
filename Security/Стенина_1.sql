@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Стенина]
+    WITH PASSWORD = N'eoryyahtoacqkoam euYjqzemsFT7_&#$!~<BqyZrxDrsbk0', SID = 0x702E1C847AC207498DE4A27061096FE3, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

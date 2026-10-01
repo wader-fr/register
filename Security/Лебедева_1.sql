@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Лебедева]
+    WITH PASSWORD = N'eor38yya6{htoacqWo<yaeuUmsFT7_&#$!~<jqzecogIqKQn', SID = 0xB6DB283A3CA6B04D91DAF4D1E6FD5A95, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

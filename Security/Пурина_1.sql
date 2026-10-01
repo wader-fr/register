@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Пурина]
+    WITH PASSWORD = N'j`qinydegjwmcz%vxPeZywkcmsFT7_&#$!~<kT8CkwwueunD', SID = 0xF0743585381DC345A7FED26E9FE08000, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

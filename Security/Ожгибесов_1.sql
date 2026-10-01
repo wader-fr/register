@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Ожгибесов]
+    WITH PASSWORD = N'ofwickamtn;{yIboj4:kuq+cmsFT7_&#$!~<ojUkMuswjeg5', SID = 0x91E6E6E6DFB8DD4E80239306ABEB3DBD, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

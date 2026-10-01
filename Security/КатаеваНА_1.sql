@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [КатаеваНА]
+    WITH PASSWORD = N'wwBmmsbsEcs{o1Oq=od0hcyomsFT7_&#$!~<t=4{vrsn|nZ{', SID = 0xB2621FF933A2A049BA3465826CCBEE7F, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

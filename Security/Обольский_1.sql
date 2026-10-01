@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Обольский]
+    WITH PASSWORD = N'eor1y^yahtToaWcqohBaCzeAmsFT7_&#$!~<uTrEjq+zeq`E', SID = 0x14F26F04FEF6D8429E67BC217E3F60CB, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

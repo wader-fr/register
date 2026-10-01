@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Жукова]
+    WITH PASSWORD = N'eor%yya54ht{=oXD~>acrqo0msFT7_&#$!~<aeQyujqzeqYy', SID = 0xC42F01C553C93742819A9EF69DCB8DA9, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

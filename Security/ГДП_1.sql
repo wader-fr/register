@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [ГДП]
+    WITH PASSWORD = N'doof}wiAc=amtn{CybZojku1msFT7_&#$!~<ciojk}uwjgg&', SID = 0x77B2AF4E028E134493FBFEF9D6340909, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

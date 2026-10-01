@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Кузовникова]
+    WITH PASSWORD = N'eOor$yyJrah5toac,K1qkoaemsFT7_&#$!~<ujqJzeaqyBrr', SID = 0xF0A7D849639A664AA6DBF4C984A00C29, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

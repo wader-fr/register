@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Марущак]
+    WITH PASSWORD = N'jqirnyKvde~jgjmzvxeyckwumsFT7_&#$!~<FesXunynu|bi', SID = 0x163240D0B4FF2446B8E3B05CA828FE63, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

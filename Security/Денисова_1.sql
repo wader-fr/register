@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Денисова]
+    WITH PASSWORD = N'ofwi6Fcamtn:{!y~obvRULojmsFT7_&#$!~<kucy^ojkuwj.', SID = 0x9C830A0C8CEC424BAD8C92D3C90BF62E, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

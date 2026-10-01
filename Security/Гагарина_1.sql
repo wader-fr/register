@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Гагарина]
+    WITH PASSWORD = N' eo2?yYryyaRhtoyacqloVaemsFT7_&#$!~<zuja,qzeq3yr', SID = 0x777D0C6FA26EA84989F41AE8E1AD95C2, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

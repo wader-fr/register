@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Трутнева]
+    WITH PASSWORD = N'wpwhwm1msVlCbcXsodhcot{vmsFT7_&#$!~<rQB1s?n|ne{q', SID = 0xB485F18E3A078A438EC15F5C979614E6, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

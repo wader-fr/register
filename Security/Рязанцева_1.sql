@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Рязанцева]
+    WITH PASSWORD = N'e!oryyyD|:aht~oaLcqcoaEemsFT7_&#$!~<u3{jq ze{qCy', SID = 0xD28F5D682DE15141AC2266E5A6461C4C, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

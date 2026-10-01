@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Гараева]
+    WITH PASSWORD = N'wwmmsbcsodhdcot{vrYsHnQ|msFT7_&#$!~<n{{bdvreMafg', SID = 0x18919871491C124CABC32CD15257C164, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Буракова]
+    WITH PASSWORD = N'ofGwi>ckamtn}{yboajkucojmsFT7_&#$!~<k|Q%<yunAwjG', SID = 0xBAC0D3F3768D81418F26317E22256098, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

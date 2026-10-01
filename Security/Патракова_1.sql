@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Патракова]
+    WITH PASSWORD = N'ofw}icgamAtVn{ysGgIboaojmsFT7_&#$!~<kuRcXoj+Twku', SID = 0x7F13A827481CBB4DB9B7D53229231F7C, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

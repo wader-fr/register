@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Буянов]
+    WITH PASSWORD = N'o2fw4ibfcamt%$n{ybQo8jkumsFT7_&#$!~<cEojkuwj_ggj', SID = 0x851B179709C97D43BBAED72360384AEE, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Закирьянова]
+    WITH PASSWORD = N'hwwYmmsXbcsskodhcoAt{UvTmsFT7_&#$!~<rs{nDF7|htn0', SID = 0xF86967AAD90D75438B27C1B450354F10, DEFAULT_LANGUAGE = [русский];
+

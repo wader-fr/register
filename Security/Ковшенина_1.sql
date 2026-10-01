@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Ковшенина]
+    WITH PASSWORD = N'ofwl@icamt@n3{ybojkuVcojmsFT7_&#$!~<kuwjgOgjKe|x', SID = 0x669A0A0A2BBE1348B962D880EFAFB6FB, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

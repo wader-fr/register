@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Карионова]
+    WITH PASSWORD = N'eoZrU;yyahtoacqomae}ujp6msFT7_&#$!~<qE}zeqyR4rr^', SID = 0xF53113E67945B74CA693BB7488CA6339, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

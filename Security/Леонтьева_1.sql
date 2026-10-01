@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Леонтьева]
+    WITH PASSWORD = N'}?@2eorTpFAMyy ahtw<oTacmsFT7_&#$!~<cq4fd%oaC0ej', SID = 0xF1A1FD39950F5C49BEF8D7A6AF9DEDC8, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

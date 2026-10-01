@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Круппа]
+    WITH PASSWORD = N'doBf_wicamtWn{{y{ibVCo2jmsFT7_&#$!~<kucoj=kuwjg8', SID = 0x83E795CBDA2D4D40A04076C08F0A0A71, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

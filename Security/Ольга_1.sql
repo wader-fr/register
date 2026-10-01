@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Ольга]
+    WITH PASSWORD = N'eO2oryyahtoac+qokaeuwjqtmsFT7_&#$!~<yz.eqyrrsbk=', SID = 0x181D8811BB93B34BB6F409FF44763F93, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

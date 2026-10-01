@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Семенова]
+    WITH PASSWORD = N'eocryya,hqtoaOcqoaTeuUjqmsFT7_&#$!~<ze7q?DyJrrJs', SID = 0x4C864571C1665941B2FF859E60823621, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

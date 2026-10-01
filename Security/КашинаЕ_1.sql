@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [КашинаЕ]
+    WITH PASSWORD = N'fe&o@MryyahtoacqofUae_uMmsFT7_&#$!~<zjqTzeqyrrs#', SID = 0x2526F4B4E9F3C84D86AE181BFE3D9F04, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

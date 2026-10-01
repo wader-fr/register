@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Канаева]
+    WITH PASSWORD = N'oEfwicaemtn{ybbAojmnkucomsFT7_&#$!~<jOkuw<jggje|', SID = 0xA0C1BE05903A064196EB9047B2BB022C, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

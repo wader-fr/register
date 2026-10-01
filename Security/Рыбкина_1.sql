@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Рыбкина]
+    WITH PASSWORD = N'wwmmsxbac$so+YdhScot{vr?msFT7_&#$!~<sn|nxKX>{SN{', SID = 0xE1C9416E742FE040A3E2AAB3C22B1582, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

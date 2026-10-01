@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Краснощекова]
+    WITH PASSWORD = N'ww!mxmsbJcsodL5d|ChxcpotmsFT7_&#$!~<{vrsn|nkQ{ID', SID = 0xBDDB767519B97B4FB768EC22573B14F4, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

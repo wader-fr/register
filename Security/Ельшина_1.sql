@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Ельшина]
+    WITH PASSWORD = N'iNeoryyEBhah7tokacqoaM<emsFT7_&#$!~<uzjqzeqyxrrw', SID = 0x494C416DFF00CD4B974FA3B338CCA643, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

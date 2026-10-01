@@ -1,0 +1,2 @@
+﻿CREATE USER [Аленичева] WITHOUT LOGIN;
+

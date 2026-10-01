@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Пласкевич]
+    WITH PASSWORD = N'wwGmms2bcsodhc?EoFt{FvrsmsFT7_&#$!~<nl|n{H{bMdIO', SID = 0xA34362EADFAE8F4CB2D10DA01C0D74CF, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

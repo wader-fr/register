@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Шилов]
+    WITH PASSWORD = N'@wBwmEmsbcCsodhRcDotj%{9msFT7_&#$!~<vrisKn|Wn{y{', SID = 0x184E83438D2651489F03D6716B734EC5, DEFAULT_LANGUAGE = [русский];
+

@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Касьяненко]
+    WITH PASSWORD = N'oUfwicamYey6mtBpn{y&bo#kmsFT7_&#$!~<vjkzucboj1ku', SID = 0x63D4D265DCA814448269B8739BA118DD, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Матвеев]
+    WITH PASSWORD = N'jqjinydd3e%gjNmz0;THvxR|msFT7_&#$!~<Qeycd2kywueu', SID = 0xF3A5012F74F16A4F83DBC1D886BDAC46, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

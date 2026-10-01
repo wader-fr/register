@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Каюмова]
+    WITH PASSWORD = N'F?ofw{Xipc>a&mtFn0|={y,bmsFT7_&#$!~<bojku2coLjmk', SID = 0x364FEC7D9C5AFF4A851399C930E41CD8, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

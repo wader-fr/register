@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Вдовина]
+    WITH PASSWORD = N'o$fwicaHmtYiPXn{yqBbonjkmsFT7_&#$!~<XuccosQjkuwj', SID = 0x3D1F6B2A7EA3424FB3A6F25374F84CE0, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

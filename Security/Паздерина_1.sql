@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Паздерина]
+    WITH PASSWORD = N'eyo<~ryyah;toea^ncqX0o{lmsFT7_&#$!~<aWUeujqzAeE7', SID = 0x3A191003F04CB9498541A69E618C5F61, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Абраамян]
+    WITH PASSWORD = N'eorDyQi^y4ahHtoa9ncqoaeumsFT7_&#$!~<wjqzvewqyrrs', SID = 0xEC0564C6D724BB4EA51486F98D1B8973, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

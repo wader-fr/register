@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Макаренкова]
+    WITH PASSWORD = N'eo!4O$rJyya;hctoaccq=oaemsFT7_&#$!~<uAjhh<q=z6ke', SID = 0x0AC8CC1E7DB1F14BB2B2C134065E3774, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

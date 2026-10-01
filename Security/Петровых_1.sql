@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Петровых]
+    WITH PASSWORD = N'ofwicaSimtnKl{yboMIjku8pmsFT7_&#$!~<|cojkuwqjgJg', SID = 0xF3C0CB661BDF584EA34B18DE0BF110C6, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

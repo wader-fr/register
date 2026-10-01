@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Ташкинова]
+    WITH PASSWORD = N'o$fWwCicamtJn{yKbohjkucomsFT7_&#$!~<jkuOwjggje|x', SID = 0xD8C33A79CDE0A84FB474173DC94355D1, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

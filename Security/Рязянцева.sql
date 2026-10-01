@@ -1,0 +1,2 @@
+﻿CREATE USER [Рязянцева] WITHOUT LOGIN;
+

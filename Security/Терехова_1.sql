@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Терехова]
+    WITH PASSWORD = N'oLfwicam7tn{Oybo1hjkud#cmsFT7_&#$!~<ojnrxNkuwjgg', SID = 0xB626AB7205A86C4EBB152D21EEAA7B4F, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

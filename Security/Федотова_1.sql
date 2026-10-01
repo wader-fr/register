@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Федотова]
+    WITH PASSWORD = N'ww_hdmnm9sbc^>sutodc7hcomsFT7_&#$!~<t7_{32Dvrs._', SID = 0xAAFA0D0E3DF9F94D8B06177DDB7391C2, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

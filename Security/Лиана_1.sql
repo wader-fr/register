@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Лиана]
+    WITH PASSWORD = N'ofwi&cLa0mtOn{ybo6jkuco^msFT7_&#$!~<jkufwjgpgjev', SID = 0x5D8EB614BC4B3F44AF60A5196382E88F, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

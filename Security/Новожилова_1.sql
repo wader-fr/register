@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Новожилова]
+    WITH PASSWORD = N'eo6WryIyaIhnt<o1acqoaeujmsFT7_&#$!~<qzeqiyrrsbkc', SID = 0x6791AB06C9AED24385D1796FC8579CC4, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

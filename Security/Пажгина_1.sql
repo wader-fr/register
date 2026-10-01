@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Пажгина]
+    WITH PASSWORD = N'eoryy#ahFnto!B<a?cqo~aeumsFT7_&#$!~<jnqzPeqyr5rs', SID = 0x1BEBA35D5AE7B846B1E87C8C8D6C4A9B, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

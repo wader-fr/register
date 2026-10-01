@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Старцева]
+    WITH PASSWORD = N'aejoUryyahtqouacqo3aeFL8msFT7_&#$!~<u`jqz1eq0yrr', SID = 0x98B43B5DCAC1424999AE6D6705E7280F, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

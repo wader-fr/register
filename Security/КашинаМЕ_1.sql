@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [КашинаМЕ]
+    WITH PASSWORD = N'1eoryyaYh?tUoa<cqoaQ<ye{msFT7_&#$!~<ENu>jqzeqyrr', SID = 0x9B6F17153DC9854BA5FCDDB81AE979C8, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

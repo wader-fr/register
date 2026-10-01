@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Чудинова]
+    WITH PASSWORD = N'_kuwEwmmsbcsqod@HhQcQ%QfmsFT7_&#$!~<ot{vGrsn|nIQ', SID = 0xE3BA8C24F27B0F478CFD741FD0BCDCE6, DEFAULT_LANGUAGE = [русский];
+

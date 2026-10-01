@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Васильева]
+    WITH PASSWORD = N'exoryyaYhto}aWN#cqo!uaeumsFT7_&#$!~<jtAqzeqyr_es', SID = 0x45B4A0C961B20344AA9D155A18671E1B, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

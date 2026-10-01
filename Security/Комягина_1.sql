@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Комягина]
+    WITH PASSWORD = N'TjICebqinydeg7VjmzVevxe#msFT7_&#$!~<yckwueunynuW', SID = 0x6388702C4BF3C54C8B368592D24BF2D2, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

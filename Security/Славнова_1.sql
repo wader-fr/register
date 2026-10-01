@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Славнова]
+    WITH PASSWORD = N'wwmZmsZ!bcsodhcotaNf{vr!msFT7_&#$!~<ksnj|}Jn{{,K', SID = 0xB58009154678724C9685C1DC6BDE7CFF, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

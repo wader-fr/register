@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Кожевникова]
+    WITH PASSWORD = N'b3eSworylyeaRhOtoacdqoaemsFT7_&#$!~<ujPqGm<zeqiy', SID = 0x34340FD9E26905439D8D243F8B801FD3, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Соколов]
+    WITH PASSWORD = N'ww.mm9=sbicsodhcot{vrs^TmsFT7_&#$!~<kn|nn81{{bZd', SID = 0xE4EC527D1D6C524DA8CDC15F5BD3E9E1, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

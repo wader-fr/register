@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Дьяков]
+    WITH PASSWORD = N'Fceoryya+htoKacqXQDtoae`msFT7_&#$!~<ujqzeQqy&rr}', SID = 0x2C1326CC71200C4D909185E2A72A4F0F, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

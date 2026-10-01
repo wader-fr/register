@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Титова]
+    WITH PASSWORD = N'ofwi$caJmtn{yboj7kuGce3omsFT7_&#$!~<}j<kuwwjggje', SID = 0x32A71244CC0CCC439280A01DE6639C84, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

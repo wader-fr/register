@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Голайденко]
+    WITH PASSWORD = N'eordSVyuyahtoa;cCqoaeu6jmsFT7_&#$!~<qzNeqy1rrsbk', SID = 0x2DE9D2C72403314E9CC93F98B46FF46F, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [ОЭ]
+    WITH PASSWORD = N'ofwi%caHBAmtn{sybojGkucomsFT7_&#$!~<jkuwUjyggje+', SID = 0xE244665942A36345A939C68046BF6F07, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Милютина]
+    WITH PASSWORD = N'Po$fwi8cwamtnAp{yboOjkucmsFT7_&#$!~<oj<k^Yzuwjgg', SID = 0x8E040AB2E99DE146972AD1039164D964, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

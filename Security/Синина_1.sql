@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Синина]
+    WITH PASSWORD = N'oPfwicyamtn`{cybZojp.4k2msFT7_&#$!~<Gl{ucUogjZku', SID = 0x8BAED977912CA4499BFF692AA292FB31, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

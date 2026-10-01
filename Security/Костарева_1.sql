@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Костарева]
+    WITH PASSWORD = N'eo>ryVyahto?BWhAacqoaefxmsFT7_&#$!~<ujq{zeh!EqyR', SID = 0x842D6D9FAEFEBF4C97A775506E7024FB, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

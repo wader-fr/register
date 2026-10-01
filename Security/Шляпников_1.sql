@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Шляпников]
+    WITH PASSWORD = N'ij6qin|~ydezgjmzvxeVyckDmsFT7_&#$!~<wu$eunynAou|', SID = 0x25BFAC177F12C9459A114038C8FAA2C6, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

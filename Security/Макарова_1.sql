@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Макарова]
+    WITH PASSWORD = N'~ekX<GpPoiryy$ah,toac^qlmsFT7_&#$!~<oa^euljqz=Fe', SID = 0x589B702049931C4CAA910C2BBC42AB13, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

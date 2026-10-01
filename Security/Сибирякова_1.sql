@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Сибирякова]
+    WITH PASSWORD = N'Iof=DwvdBicamSt=Zy=n{tybmsFT7_&#$!~<ojku&cojkuwj', SID = 0x36D08DE51B3F274DB3E4199B654CB9FF, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

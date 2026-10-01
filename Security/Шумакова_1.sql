@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Шумакова]
+    WITH PASSWORD = N'Yeor}yIOyahtoacqobEa3eu;msFT7_&#$!~<jqze+sqyrhsG', SID = 0xCFEA2A29C92EDF44A753262110999351, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

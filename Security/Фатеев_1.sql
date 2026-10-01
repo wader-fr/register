@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Фатеев]
+    WITH PASSWORD = N'Axenoryy.ah_toaBcqoLK1aemsFT7_&#$!~<uGjqze;q>yrr', SID = 0xA258B8088307834A9D942A8E81E2D194, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

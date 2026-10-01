@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [СеливановаЕ]
+    WITH PASSWORD = N'ofwic!amStn>{PyVbojk3ucomsFT7_&#$!~<jbk=AuwjcgTg', SID = 0x028F78B5574E49489426FD8E64FC2AA6, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

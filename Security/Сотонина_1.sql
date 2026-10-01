@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Сотонина]
+    WITH PASSWORD = N'oLf4_wicam.tign{hybojkucmsFT7_&#$!~<o3cjdkuwjggF', SID = 0xE1186ECBE16F8B4281AA5D0BBD4FE70F, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

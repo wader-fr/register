@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Перемотина]
+    WITH PASSWORD = N'wwmhLJmysKbpxcsUmodhg2cGmsFT7_&#$!~<ot{vrwgsn#~|', SID = 0x0A4DCF82A94FDE4AB254BC070A6FB0BB, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

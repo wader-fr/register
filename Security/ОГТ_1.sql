@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [ОГТ]
+    WITH PASSWORD = N'oj<9fwicam:9tn{ymboBOjkumsFT7_&#$!~<coJjkuwwjggj', SID = 0x30942C13D75B4349932EDFBC406C61EC, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

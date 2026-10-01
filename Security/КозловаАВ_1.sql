@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [КозловаАВ]
+    WITH PASSWORD = N'jqinyd~egjmPzvTxp;eJXDycmsFT7_&#$!~<kwueuICtnynu', SID = 0x77451F2BB9A1ED4DB81B672C73E8859A, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

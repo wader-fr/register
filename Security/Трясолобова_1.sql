@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Трясолобова]
+    WITH PASSWORD = N'ep9oQryyMa1htjoaL:vcbqoamsFT7_&#$!~<ceujqzeTqyrr', SID = 0x4602E0F486AC9E4A8811A06C4C6D2E8C, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

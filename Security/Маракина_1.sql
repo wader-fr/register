@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Маракина]
+    WITH PASSWORD = N'ovfwigcka?mtn>{Cybo#jk,umsFT7_&#$!~<coKjk uS9wS|', SID = 0x7A8376D3E18D2C4EA8174997241B7FB1, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

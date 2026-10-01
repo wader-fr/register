@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Скулкина]
+    WITH PASSWORD = N'o1fw_icamtB n{ybojkuGcojmsFT7_&#$!~<kuOwnjgGghQj', SID = 0x25067491DA5DD740B66E668DA0D77C51, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

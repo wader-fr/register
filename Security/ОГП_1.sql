@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [ОГП]
+    WITH PASSWORD = N'ofswi cBiamtn6cfv<{ybodjmsFT7_&#$!~<4kucdP+ojkuw', SID = 0xAF8B6572A68BFF448A366E1EBEC94EAC, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

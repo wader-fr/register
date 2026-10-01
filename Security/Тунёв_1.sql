@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Тунёв]
+    WITH PASSWORD = N'j;qniinydegDkjmzvxey^<ckmsFT7_&#$!~<wueunyn`u|Eb', SID = 0xF67D6805DFEC06479EC61B2E0804C9F6, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

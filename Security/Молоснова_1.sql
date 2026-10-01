@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Молоснова]
+    WITH PASSWORD = N'o7fwiOcamf=tn{yb5ojkuco^msFT7_&#$!~<eYjkunFwjgg!', SID = 0xE2FC24408631DC4D9F4AA2390A6075AD, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

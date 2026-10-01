@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Зыкова]
+    WITH PASSWORD = N'oifwi`4cJamtnbS{yD9boo jmsFT7_&#$!~<kou1c@foj.Lp', SID = 0xBD0AFEFDD7E2984AA157CB0E32E20EAD, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

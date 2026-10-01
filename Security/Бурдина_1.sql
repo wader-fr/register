@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Бурдина]
+    WITH PASSWORD = N'w_wmmVHsbc9seodhcot{vrUsmsFT7_&#$!~<n|n_{{kbxd<v', SID = 0xA72B57621045644390F19C8BE1158243, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

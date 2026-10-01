@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Одинаева]
+    WITH PASSWORD = N'ofwicoajm1qtGn{ny3bYc:o|msFT7_&#$!~<9jkucfQXojku', SID = 0xFBA52AB824099A488C03D8E8163C37CA, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

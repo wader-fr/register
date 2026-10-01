@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Долгов]
+    WITH PASSWORD = N'XjqinE$y_degjmzvxeycskwumsFT7_&#$!~<&Oeun=y~nuk6', SID = 0xFDD750DECDE7BD46B85AC31171CD2661, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Розалия]
+    WITH PASSWORD = N'eor3Eyyaht+0oac=qoaeu#jqmsFT7_&#$!~<zeqJLyr5$C@r', SID = 0xE759057C9475D14384817F6A74500BEC, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

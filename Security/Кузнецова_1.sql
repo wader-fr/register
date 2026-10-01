@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Кузнецова]
+    WITH PASSWORD = N'eor0yyahtcoacQGqo3_9ae@umsFT7_&#$!~<jsq<zeqyrHrt', SID = 0xC05B2C41AFC0524DAB517664BD4AB176, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

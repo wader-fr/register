@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Вахов]
+    WITH PASSWORD = N'o#fwicamtn{ajybojkcucMojmsFT7_&#$!~<kuwjggjpe|Xx', SID = 0x749EB3B074FF304680D7CA7D8D6C2350, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [ОРП]
+    WITH PASSWORD = N'oEw{3?Ufxbw@icXzFamBtn{ymsFT7_&#$!~<bojkucop ^=j', SID = 0x461E2046D8997145B36F28B8F897CCE7, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

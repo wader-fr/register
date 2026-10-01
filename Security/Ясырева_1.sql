@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Ясырева]
+    WITH PASSWORD = N'wdwZm`mCjswbZ+cscodhcdo=msFT7_&#$!~<ntI{v_rUsn|&', SID = 0x543502ACF7C1BF40886660BECFF8E1C7, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

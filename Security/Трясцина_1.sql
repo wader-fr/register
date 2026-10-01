@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Трясцина]
+    WITH PASSWORD = N'#ofwicYGamtXn{`ybojkGucomsFT7_&#$!~<j>skQSuwjgpg', SID = 0xBF7973157D84624EA4B26D74BAA23387, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

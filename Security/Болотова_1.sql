@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Болотова]
+    WITH PASSWORD = N'eoryyahpLtoSKaacqoaeEujPmsFT7_&#$!~<mqz2UeqiyAur', SID = 0x6371DDF4721F484694D44D885A898ABE, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

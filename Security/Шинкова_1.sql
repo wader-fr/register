@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Шинкова]
+    WITH PASSWORD = N'ieor2yya,hL>tocacqoaeujqmsFT7_&#$!~<zA$1eVgqyrKz', SID = 0x749D62B5C1608845AABEF3D9AEAB26E3, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

@@ -1,0 +1,2 @@
+﻿CREATE USER [Демакова] WITHOUT LOGIN;
+

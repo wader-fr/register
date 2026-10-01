@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [вап]
+    WITH PASSWORD = N'=eo7uryy:jahtzoaHcqo7l:amsFT7_&#$!~<eujqzeqyrrsb', SID = 0x57D51FAF282F8D44B7120FFA044491F6, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+

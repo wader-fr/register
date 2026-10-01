@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Плешивых]
+    WITH PASSWORD = N'ofw:aic!amStn{PuZybotjgkmsFT7_&#$!~<uocojkBuTw@j', SID = 0x467D46FB66114740A3988EF9F62925F2, DEFAULT_LANGUAGE = [русский], CHECK_POLICY = OFF;
+
