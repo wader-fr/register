@@ -682,5 +682,6 @@
     <Build Include="dbo\Stored Procedures\qPlanList.sql" />
     <Build Include="dbo\Stored Procedures\qDocInById.sql" />
     <Build Include="dbo\Stored Procedures\aSMeasPlan.sql" />
+    <Build Include="dbo\Stored Procedures\qSMeasPlaneS.sql" />
   </ItemGroup>
 </Project>
