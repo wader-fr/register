@@ -17,6 +17,8 @@
 
 
 
+
+
 GO
 -- =============================================
 -- Author:		<Author,,Name>
@@ -176,4 +178,9 @@ GO
 GRANT DELETE
     ON OBJECT::[dbo].[tSubDocIn] TO [Admin]
     AS [dbo];
+
+
+GO
+CREATE NONCLUSTERED INDEX [IX_tSubDocIn_IdODocIn]
+    ON [dbo].[tSubDocIn]([IdODocIn] ASC);
 

@@ -10,6 +10,8 @@
 
 
 
+
+
 GO
 -- =============================================
 -- Author:		<Author,,Name>
@@ -133,4 +135,9 @@ GO
 GRANT DELETE
     ON OBJECT::[dbo].[tAttach] TO [Admin]
     AS [dbo];
+
+
+GO
+CREATE NONCLUSTERED INDEX [IX_tAttach_IdODocIn]
+    ON [dbo].[tAttach]([IdODocIn] ASC);
 

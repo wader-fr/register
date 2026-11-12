@@ -1,102 +1,578 @@
-﻿-- =============================================
--- Author:		<Author,,Name>
--- Create date: <Create Date,,>
--- Description:	<Description,,>
--- =============================================
-CREATE PROCEDURE [dbo].[qDocInList] 
---	DECLARE
-	@IdTypeDoc int = NULL
-	,@IdTypeWork int = NULL
-	,@Dept varchar(50) = NULL
-	,@IdService tinyint = NULL
-	,@NoDatePlane int = 0
-	,@NoDateEnd int = 0
-	,@YearDoc varchar(4) = null
-	,@NumIn bigint = null
-	,@NumOut varchar(50) = NULL
-	,@DateInBeg datetime = NULL
-	,@DateInEnd datetime = NULL
-	--,@IdGroupDocType int = NULL
-	--,@IdGroupWorkType int = NULL
-	,@DateContBeg datetime = NULL
-	,@DateContEnd datetime = NULL
-	,@IdBudget int = NULL
-	,@NoEx bit = 0
-	,@Contragent varchar(500) = NULL
+﻿
+CREATE PROCEDURE [dbo].[qDocInList]
+--DECLARE
+    @IdTypeDoc int = NULL,
+    @IdTypeWork int = NULL,
+    @Dept varchar(50) = NULL,
+    @IdService tinyint = NULL,
+
+    @NoDatePlane bit = 0,
+    @NoDateEnd bit = 0,
+
+    @YearDoc varchar(4) = NULL,
+    @NumIn bigint = NULL,
+    @NumOut varchar(50) = NULL,
+
+    @DateInBeg date = NULL,
+    @DateInEnd date = NULL,
+
+    @DateContBeg date = NULL,
+    @DateContEnd date = NULL,
+
+    @IdBudget int = NULL,
+    @NoEx bit = 0,
+    @Contragent varchar(500) = NULL
 
 AS
 BEGIN
 
-	SET NOCOUNT ON;
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	IF @Dept IS NULL
-		SET @Dept = '%';
-	ELSE
-		SET @Dept = '% ' + @Dept + ' %';
+    SET NOCOUNT ON;
 
-	SET @NumOut = dbo.fnFindIndex(@NumOut,'%');
+    BEGIN TRY
 
-	SET @Contragent = dbo.fnFindIndex(@Contragent, '%')
+        ----------------------------------------------------------------------
+        -- НОРМАЛИЗАЦИЯ ПАРАМЕТРОВ
+        --
+        -- Access может передавать 0 или пустую строку как значение
+        -- "фильтр не задан".
+        --
+        -- Как и в qPlanList, внутри процедуры такие значения приводим
+        -- к NULL и далее используем единый принцип:
+        --
+        --     @Parameter IS NULL OR ...
+        ----------------------------------------------------------------------
 
-	IF @DateInBeg IS NULL
-		SET @DateInBeg = CONVERT(DATETIME, '01.01.1899', 104);
+        IF @IdTypeDoc = 0
+            SET @IdTypeDoc = NULL;
 
-	IF @DateInEnd IS NULL
-		SET @DateInEnd = CONVERT(DATETIME, '01.01.2200', 104);
+        IF @IdTypeWork = 0
+            SET @IdTypeWork = NULL;
 
-	IF @DateContBeg IS NULL
-		SET @DateContBeg = CONVERT(DATETIME, '01.01.1899', 104);
+        IF @IdBudget = 0
+            SET @IdBudget = NULL;
 
-	IF @DateContEnd IS NULL
-		SET @DateContEnd = CONVERT(DATETIME, '01.01.2200', 104);
+        IF @YearDoc = ''
+            SET @YearDoc = NULL;
 
-	IF @YearDoc = 0
-		SET @YearDoc = NULL
-		
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	SELECT di.IdDocIn, di.NumInA, di.DateIn, di.NumOut, di.DateOut, di.NoEx, di.YearDoc, di.NumCancel, di.DateCancel, di.NumCancelOut, di.DateCancelOut ,di.ScanDocIn, di.NumInsp + N' от ' + CONVERT (NVARCHAR, di.DateInsp, 4) Inspection,
-		di.DatePlane, di.DateEnd,
-		CONVERT (NVARCHAR, di.NumIn) + N'-' + di.Suffics NumInF, 
-		CASE WHEN ISNULL(att.c, 0) > 0 THEN 1 ELSE 0 END AttachC,
-		CASE WHEN ISNULL(s.c, 0) > 0 THEN 1 ELSE 0 END SubDocC, 
-		CASE WHEN ISNULL(sc.c, 0) > 0 THEN 1 ELSE 0 END ScanC, 
-		a1.Depts Embed, a1.IdsDept,	a2.Depts Accepted,
-		case when c.sName is not null then isnull(pc.Property, '') + ' ' + c.sName else c.fName end Contragent, 
-	
-		isnull(di.[Object],case when obj.sName is not null then isnull(p.Property, '') + ' ' + obj.sName else obj.fName end)[object] ,
-		dt.sDocType, wt.WorkType,
-		ct.NumContract + ' от ' + CONVERT(varchar(10), ct.DateContract, 104) NumContract
---
-	FROM dbo.tblDocIn di
-		LEFT OUTER JOIN dbo.ftAppointment(1) a1 ON a1.IdODoc = di.IdDocIn
-		LEFT OUTER JOIN dbo.ftAppointment(2) a2 ON a2.IdODoc = di.IdDocIn
-		LEFT OUTER JOIN dbo.tblContragent c ON c.IdContragent = di.IdOContragent
-		LEFT OUTER JOIN dbo.tblContragent obj ON obj.IdContragent = di.IdOObject
-		left outer join [dbo].[tblProp] p on p.IdProperty = obj.IdOProperty
-		left outer join [dbo].[tblProp] pc on pc.IdProperty = c.IdOProperty
-		LEFT OUTER JOIN dbo.tblDocType dt ON dt.IdDocType = di.IdOTypeDoc
-		LEFT OUTER JOIN dbo.tblWorkType wt ON wt.IdWorkType = di.IdOTypeWork
-		LEFT OUTER JOIN [dbo].[tContract] ct ON ct.IdContract = di.IdOContract
-		LEFT OUTER JOIN (SELECT COUNT(a.IdAttach) c, a.IdODocIn FROM dbo.tAttach a GROUP BY a.IdODocIn) att ON att.IdODocIn = di.IdDocIn
-		LEFT OUTER JOIN (SELECT COUNT(sdi.IdSubDocIn) c, sdi.IdODocIn FROM dbo.tSubDocIn sdi GROUP BY sdi.IdODocIn) s ON s.IdODocIn = di.IdDocIn
-		LEFT OUTER JOIN (SELECT COUNT(sdi.IdScanIn) c, sdi.IdODocIn FROM dbo.tScanDocIn sdi GROUP BY sdi.IdODocIn) sc ON sc.IdODocIn = di.IdDocIn
+        IF @NumOut = ''
+            SET @NumOut = NULL;
 
-	WHERE di.YearDoc = ISNULL(@YearDoc, di.YearDoc)									--Год учета
-		AND (ISNULL(c.fName,'') LIKE @Contragent OR ISNULL(c.sName, '') LIKE @Contragent)					--Заявитель
-		AND di.NumIn = ISNULL(@NumIn, di.NumIn)										--Входящий номер
-		AND isnull(di.NumOut,'') LIKE @NumOut													--Исходящий номер
-		AND ISNULL(di.DateIn, GETDATE()) BETWEEN @DateInBeg AND @DateInEnd			--Входящая дата
-		AND ISNULL(di.DatePlane, GETDATE()) BETWEEN @DateContBeg AND @DateContEnd	--Контрольный срок
-		AND ISNULL(wt.IdOBudget, 0) = COALESCE(@IdBudget, wt.IdOBudget, 0)			--Бюджет
-		AND CASE WHEN di.DatePlane IS NULL THEN 1 ELSE 0 END >= @NoDatePlane		--Без контрольного срока
-		AND CASE WHEN di.DateEnd IS NULL THEN 1 ELSE 0 END >= @NoDateEnd			--Незавершенные
-		AND ISNULL(di.IdOTypeDoc, 0) = COALESCE(@IdTypeDoc, di.IdOTypeDoc, 0)		--Вид документа
-		AND ISNULL(di.IdOTypeWork, 0) = COALESCE(@IdTypeWork, di.IdOTypeWork, 0)	--Вид работ
-		AND ' ' + ISNULL(a1.IdsDept, '')  + ' ' LIKE @Dept							--Подразделение
-		AND di.NoEx <= @NoEx
-	
-	ORDER BY di.NumIn, di.YearDoc
-END
+        IF @Contragent = ''
+            SET @Contragent = NULL;
+
+
+        ----------------------------------------------------------------------
+        -- ДАТЫ
+        --
+        -- Access может передавать 1900-01-01 как дату-заглушку
+        -- для незаполненного поля.
+        --
+        -- В qPlanList такие значения приводятся к NULL.
+        ----------------------------------------------------------------------
+
+        IF @DateInBeg = '1900-01-01'
+            SET @DateInBeg = NULL;
+
+        IF @DateInEnd = '1900-01-01'
+            SET @DateInEnd = NULL;
+
+        IF @DateContBeg = '1900-01-01'
+            SET @DateContBeg = NULL;
+
+        IF @DateContEnd = '1900-01-01'
+            SET @DateContEnd = NULL;
+
+
+        ----------------------------------------------------------------------
+        -- ПОДГОТОВКА ТЕКСТОВЫХ ФИЛЬТРОВ
+        ----------------------------------------------------------------------
+
+        IF @Dept IS NULL
+            SET @Dept = '%';
+        ELSE
+            SET @Dept = '% ' + @Dept + ' %';
+
+
+        -- Поиск исходящего номера через fnFindIndex.
+        SET @NumOut = dbo.fnFindIndex(@NumOut, '%');
+
+
+        -- Поиск контрагента через fnFindIndex.
+        SET @Contragent = dbo.fnFindIndex(@Contragent, '%');
+
+
+        ----------------------------------------------------------------------
+        -- ПУТЬ К ПАПКЕ ПРЕДПИСАНИЙ
+        --
+        -- PathPred — корневая папка предписаний.
+        ----------------------------------------------------------------------
+
+        DECLARE @PathPred nvarchar(2000);
+
+        SET @PathPred = dbo.fnGetOption('PathPred');
+
+
+        ----------------------------------------------------------------------
+        -- ОСНОВНАЯ ВЫБОРКА
+        ----------------------------------------------------------------------
+
+        SELECT
+
+            di.IdDocIn,
+
+            di.NumInA,
+            di.DateIn,
+
+            di.NumOut,
+            di.DateOut,
+
+            di.NoEx,
+            di.YearDoc,
+
+            di.NumCancel,
+            di.DateCancel,
+
+            di.NumCancelOut,
+            di.DateCancelOut,
+
+            di.ScanDocIn,
+            di.IdOContract,
+            ------------------------------------------------------------------
+            -- Номер и дата инспекции
+            ------------------------------------------------------------------
+
+            di.NumInsp
+                + N' от '
+                + CONVERT(NVARCHAR, di.DateInsp, 4) AS Inspection,
+
+            di.DatePlane,
+            di.DateEnd,
+
+            ------------------------------------------------------------------
+            -- Форматированный входящий номер
+            ------------------------------------------------------------------
+
+            CONVERT(NVARCHAR, di.NumIn)
+                + N'-'
+                + di.Suffics AS NumInF,
+
+            ------------------------------------------------------------------
+            -- Наличие приложений
+            --
+            -- Количество нам не требуется.
+            -- EXISTS возвращает TRUE уже при первой найденной записи.
+            ------------------------------------------------------------------
+
+            CASE
+                WHEN EXISTS
+                (
+                    SELECT 1
+                    FROM dbo.tAttach a
+                    WHERE a.IdODocIn = di.IdDocIn
+                )
+                THEN 1
+                ELSE 0
+            END AS AttachC,
+
+            ------------------------------------------------------------------
+            -- Наличие поддокументов
+            ------------------------------------------------------------------
+
+            CASE
+                WHEN EXISTS
+                (
+                    SELECT 1
+                    FROM dbo.tSubDocIn sdi
+                    WHERE sdi.IdODocIn = di.IdDocIn
+                )
+                THEN 1
+                ELSE 0
+            END AS SubDocC,
+
+            ------------------------------------------------------------------
+            -- Наличие сканов
+            ------------------------------------------------------------------
+
+            CASE
+                WHEN EXISTS
+                (
+                    SELECT 1
+                    FROM dbo.tScanDocIn sdi
+                    WHERE sdi.IdODocIn = di.IdDocIn
+                )
+                THEN 1
+                ELSE 0
+            END AS ScanC,
+
+            ------------------------------------------------------------------
+            -- Подразделения
+            ------------------------------------------------------------------
+
+            a1.Depts AS Embed,
+            a1.IdsDept,
+
+            a2.Depts AS Accepted,
+
+            ------------------------------------------------------------------
+            -- Контрагент
+            ------------------------------------------------------------------
+
+            CASE
+                WHEN c.sName IS NOT NULL
+                    THEN ISNULL(pc.Property, '') + ' ' + c.sName
+                ELSE c.fName
+            END AS Contragent,
+
+            ------------------------------------------------------------------
+            -- Объект
+            ------------------------------------------------------------------
+
+            ISNULL
+            (
+                di.[Object],
+                CASE
+                    WHEN obj.sName IS NOT NULL
+                        THEN ISNULL(p.Property, '') + ' ' + obj.sName
+                    ELSE obj.fName
+                END
+            ) AS [Object],
+
+            ------------------------------------------------------------------
+            -- Вид документа
+            ------------------------------------------------------------------
+
+            dt.sDocType,
+
+            ------------------------------------------------------------------
+            -- Вид работы
+            ------------------------------------------------------------------
+
+            wt.WorkType,
+
+            ------------------------------------------------------------------
+            -- Договор
+            ------------------------------------------------------------------
+
+            ct.NumContract
+                + ' от '
+                + CONVERT(varchar(10), ct.DateContract, 104) AS NumContract,
+
+            ------------------------------------------------------------------
+            -- Полный путь к скану предписания
+            --
+            -- PathPred
+            --     \Год
+            --     \Номер-Suffics
+            --     \Файл
+            ------------------------------------------------------------------
+
+            @PathPred
+                + '\'
+                + di.YearDoc
+                + '\'
+                + CONVERT(varchar(10), di.NumIn)
+                + '-'
+                + di.Suffics
+                + '\'
+                + di.ScanDocIn AS ScanPred
+
+
+        FROM dbo.tblDocIn di
+
+
+        ----------------------------------------------------------------------
+        -- НАЗНАЧЕНИЯ
+        --
+        -- ftAppointment здесь не нужна.
+        --
+        -- Она фактически выполняла:
+        --
+        --     SELECT *
+        --     FROM tAppointment
+        --     WHERE IdOTypeApp = ...
+        --
+        -- Поэтому условие сразу перенесено в JOIN.
+        ----------------------------------------------------------------------
+
+LEFT JOIN dbo.tAppointment a1 --WITH (INDEX(IX_tAppointment_IdOTypeApp_IdODoc))
+    ON a1.IdODoc = di.IdDocIn
+    AND a1.IdOTypeApp = 1
+
+LEFT JOIN dbo.tAppointment a2 --WITH (INDEX(IX_tAppointment_IdOTypeApp_IdODoc))
+    ON a2.IdODoc = di.IdDocIn
+    AND a2.IdOTypeApp = 2
+        ----------------------------------------------------------------------
+        -- КОНТРАГЕНТ
+        ----------------------------------------------------------------------
+
+        LEFT JOIN dbo.tblContragent c
+            ON c.IdContragent = di.IdOContragent
+
+           
+        ----------------------------------------------------------------------
+        -- ОБЪЕКТ
+        ----------------------------------------------------------------------
+
+        LEFT JOIN dbo.tblContragent obj
+            ON obj.IdContragent = di.IdOObject
+
+        LEFT JOIN dbo.tblProp p
+            ON p.IdProperty = obj.IdOProperty
+
+        LEFT JOIN dbo.tblProp pc
+            ON pc.IdProperty = c.IdOProperty
+
+
+        ----------------------------------------------------------------------
+        -- ВИД ДОКУМЕНТА
+        ----------------------------------------------------------------------
+
+        LEFT JOIN dbo.tblDocType dt
+            ON dt.IdDocType = di.IdOTypeDoc
+
+
+        ----------------------------------------------------------------------
+        -- ВИД РАБОТЫ
+        ----------------------------------------------------------------------
+
+        LEFT JOIN dbo.tblWorkType wt
+            ON wt.IdWorkType = di.IdOTypeWork
+
+
+        ----------------------------------------------------------------------
+        -- ДОГОВОР
+        ----------------------------------------------------------------------
+
+        LEFT JOIN dbo.tContract ct
+            ON ct.IdContract = di.IdOContract
+
+
+        WHERE
+
+            ------------------------------------------------------------------
+            -- ГОД УЧЁТА
+            ------------------------------------------------------------------
+
+            (
+                @YearDoc IS NULL
+                OR di.YearDoc = @YearDoc
+            )
+
+
+            ------------------------------------------------------------------
+            -- ЗАЯВИТЕЛЬ / КОНТРАГЕНТ
+            ------------------------------------------------------------------
+
+            AND
+            (
+                ISNULL(c.fName, '') LIKE @Contragent
+                OR ISNULL(c.sName, '') LIKE @Contragent
+            )
+
+
+            ------------------------------------------------------------------
+            -- ВХОДЯЩИЙ НОМЕР
+            ------------------------------------------------------------------
+
+            AND
+            (
+                @NumIn IS NULL
+                OR di.NumIn = @NumIn
+            )
+
+
+            ------------------------------------------------------------------
+            -- ИСХОДЯЩИЙ НОМЕР
+            ------------------------------------------------------------------
+
+            AND
+            (
+                @NumOut IS NULL
+                OR ISNULL(di.NumOut, '') LIKE @NumOut
+            )
+
+
+            ------------------------------------------------------------------
+            -- ВХОДЯЩАЯ ДАТА
+            --
+            -- Та же модель, что в qPlanList.
+            --
+            -- Начальная дата включается:
+            --
+            --     >= @DateInBeg
+            --
+            -- Конечная дата является включительной для пользователя,
+            -- поэтому технически используется следующая дата:
+            --
+            --     < DATEADD(day, 1, @DateInEnd)
+            --
+            -- Это особенно важно, если DateIn имеет тип datetime.
+            ------------------------------------------------------------------
+
+            AND
+            (
+                @DateInBeg IS NULL
+                OR di.DateIn >= @DateInBeg
+            )
+
+            AND
+            (
+                @DateInEnd IS NULL
+                OR di.DateIn < DATEADD(day, 1, @DateInEnd)
+            )
+
+
+            ------------------------------------------------------------------
+            -- КОНТРОЛЬНЫЙ СРОК
+            --
+            -- Аналогичная схема диапазона.
+            ------------------------------------------------------------------
+
+            AND
+            (
+                @DateContBeg IS NULL
+                OR di.DatePlane >= @DateContBeg
+            )
+
+            AND
+            (
+                @DateContEnd IS NULL
+                OR di.DatePlane < DATEADD(day, 1, @DateContEnd)
+            )
+
+
+            ------------------------------------------------------------------
+            -- БЮДЖЕТ
+            ------------------------------------------------------------------
+
+            AND
+            (
+                @IdBudget IS NULL
+                OR ISNULL(wt.IdOBudget, 0) = @IdBudget
+            )
+
+
+            ------------------------------------------------------------------
+            -- БЕЗ КОНТРОЛЬНОГО СРОКА
+            --
+            -- 0 = фильтр не применяется.
+            -- 1 = только документы без контрольного срока.
+            ------------------------------------------------------------------
+
+            AND
+            (
+                @NoDatePlane = 0
+                OR di.DatePlane IS NULL
+            )
+
+
+            ------------------------------------------------------------------
+            -- НЕЗАВЕРШЁННЫЕ
+            --
+            -- 0 = фильтр не применяется.
+            -- 1 = только документы без даты окончания.
+            ------------------------------------------------------------------
+
+            AND
+            (
+                @NoDateEnd = 0
+                OR di.DateEnd IS NULL
+            )
+
+
+            ------------------------------------------------------------------
+            -- ВИД ДОКУМЕНТА
+            ------------------------------------------------------------------
+
+            AND
+            (
+                @IdTypeDoc IS NULL
+                OR di.IdOTypeDoc = @IdTypeDoc
+            )
+
+
+            ------------------------------------------------------------------
+            -- ВИД РАБОТЫ
+            ------------------------------------------------------------------
+
+            AND
+            (
+                @IdTypeWork IS NULL
+                OR di.IdOTypeWork = @IdTypeWork
+            )
+
+
+            ------------------------------------------------------------------
+            -- ПОДРАЗДЕЛЕНИЕ
+            --
+            -- IdsDept хранится списком идентификаторов.
+            -- Существующая логика поиска сохраняется.
+            ------------------------------------------------------------------
+
+            AND
+                ' ' + ISNULL(a1.IdsDept, '') + ' ' LIKE @Dept
+
+
+            ------------------------------------------------------------------
+            -- ИСКЛЮЧЕНИЕ
+            ------------------------------------------------------------------
+
+            AND
+                di.NoEx <= @NoEx
+
+
+        ----------------------------------------------------------------------
+        -- СОРТИРОВКА
+        ----------------------------------------------------------------------
+
+        ORDER BY
+            di.NumIn,
+            di.YearDoc
+
+
+        ----------------------------------------------------------------------
+        -- RECOMPILE
+        --
+        -- OPTION является частью SELECT.
+        -- Поэтому перед ним НЕ ставим точку с запятой.
+        --
+        -- SQL Server получает возможность построить план с учётом
+        -- фактических значений параметров конкретного вызова.
+        ----------------------------------------------------------------------
+
+        OPTION (RECOMPILE);
+
+
+    END TRY
+
+
+    BEGIN CATCH
+
+        ----------------------------------------------------------------------
+        -- ОБРАБОТКА ОШИБКИ
+        --
+        -- Передаём ошибку SQL Server обратно в Access.
+        ----------------------------------------------------------------------
+
+        DECLARE @ErrorMessage nvarchar(4000);
+        DECLARE @ErrorSeverity int;
+        DECLARE @ErrorState int;
+
+        SELECT
+            @ErrorMessage = ERROR_MESSAGE(),
+            @ErrorSeverity = ERROR_SEVERITY(),
+            @ErrorState = ERROR_STATE();
+
+        RAISERROR
+        (
+            @ErrorMessage,
+            @ErrorSeverity,
+            @ErrorState
+        );
+
+    END CATCH
+
+END;
 GO
 GRANT EXECUTE
     ON OBJECT::[dbo].[qDocInList] TO [RegistrarM]

@@ -24,6 +24,8 @@
 
 
 
+
+
 GO
 CREATE UNIQUE NONCLUSTERED INDEX [UK_tAppointment]
     ON [dbo].[tAppointment]([IdODoc] ASC, [IdOTypeApp] ASC);
@@ -204,4 +206,9 @@ GO
 GRANT DELETE
     ON OBJECT::[dbo].[tAppointment] TO [Admin]
     AS [dbo];
+
+
+GO
+CREATE NONCLUSTERED INDEX [IX_tAppointment_IdOTypeApp_IdODoc]
+    ON [dbo].[tAppointment]([IdOTypeApp] ASC, [IdODoc] ASC);
 

@@ -8,6 +8,8 @@
 );
 
 
+
+
 GO
 GRANT UPDATE
     ON OBJECT::[dbo].[tScanDocIn] TO [RegistrarB]
@@ -78,4 +80,9 @@ GO
 GRANT DELETE
     ON OBJECT::[dbo].[tScanDocIn] TO [Admin]
     AS [dbo];
+
+
+GO
+CREATE NONCLUSTERED INDEX [IX_tScanDocIn_IdODocIn]
+    ON [dbo].[tScanDocIn]([IdODocIn] ASC);
 
